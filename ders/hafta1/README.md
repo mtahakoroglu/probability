@@ -65,7 +65,7 @@ $$O': \text{İlk oturan kızın kenara oturması}$$
 
 <p align="justify">Eğer bir üçüncü durum söz konusu olsaydı onu da hesaba katmalıydık ama burada örneklem uzay ikiye bölünmüş halde. İlgilendiğimiz olay olan "iki kızın yanyana gelmesi" durumunu yukarıda $A$ olarak tanımlamıştık. O zaman örneklem uzayın Venn şeması hâlinde temsili aşağıdaki gibi olur.</p>
 
-<img src="resim/question1.jpg" alt="yanyana oturma sorusu örneklem uzay" width="400" height=auto>
+<img src="../../resim/question1.jpg" alt="yanyana oturma sorusu örneklem uzay" width="400" height=auto>
 
 <p align="justify">Uzayda koşullu olasılıklara bakmaya başlıyoruz.</p>
 
