@@ -14,19 +14,35 @@
 
 $$6 x 5 x 4 x 3 x 2 x 1 = 6!$$
 
-<p align="justify">değerini verir. Yâni altı öğrenci yanyana 120 farklı biçimde oturabilmekte. Bizden istenen bu kadar farklı oturma düzeninin hangilerinde iki kız arkadaşın yanyana düştükleri. Burada biraz düşünürsek iki kız arkadaşı tek bir insan gibi kabul edip toplamda 5 kişiyinin yanyana toplam</p>
+<p align="justify">değerini verir. Bu hesabı Python'da aşağıdaki gibi yapabiliriz. İstersek de ya döngü ile ya da rekürsif (özyinelemeli) bir fonksiyon aracılığıyla faktöriyel hesabını yapabiliriz.</p>
+
+<b>factorial_computation_math.py</b>
+
+```
+import math
+print(f"6! = {math.factorial(6)}")
+```
+
+<b>factorial_computation_numpy.py</b>
+
+```
+import numpy as np
+print(f"6! = {np.math.factorial(6)}")
+```
+
+<p align="justify">Yâni altı öğrenci yanyana 720 farklı biçimde oturabilmektedir. Bizden istenen bu kadar farklı oturma düzeninin hangilerinde iki kız arkadaşın yanyana düştükleri. Burada biraz düşünürsek iki kız arkadaşı tek bir insan gibi kabul edip toplamda 5 kişinin yanyana toplam</p>
 
 $$5!$$
 
-<p align="justify">biçimde oturabileceğini buluruz. A olayını aşağıdaki gibi tanımlarsak</p>
+<p align="justify">biçimde oturabileceğini buluruz. A olayını aşağıdaki gibi tanımlayalım.</p>
 
 $$A: \text{İki kızın yanyana gelmesi}$$
 
-<p align="justify">o zaman, iki kızın yanyana gelme olasılığı</p>
+<p align="justify">O zaman, iki kızın yanyana gelme olasılığı</p>
 
 $$P(A) = \frac{5!}{6!}$$
 
-<p align="justify">olarak bulunur. Yalnız buraya kadar olan mantığımızda birşeyi atladık: Kızları tek bir insan gibi düşünüp de $5!$ değerini elde etmemiz mantıklıydı ama kız öğrenciler kendi aralarında yer değiştirebilirler. Bu durumu da hesaba katmalıyız. İki kız kendi aralarında</p>
+<p align="justify">olarak bulunur. Yalnız buraya kadar kurduğumuz mantıkta birşeyi atladık: Kızları tek bir insan gibi düşünüp de $5!$ değerini elde etmemiz mantıklıydı ama kız öğrenciler kendi aralarında yer değiştirebilirler. Bu durumu da gözönünde bulundurmalıyız. İki kız kendi aralarında</p>
 
 $$2!$$
 
@@ -42,7 +58,7 @@ $$P(A) = \frac{5! 2!}{6!}= \frac{1}{3} = 0.33$$
 |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |
 | E | E | K | E | K | E |
 
-<p align="justify">Aynen yukarıdaki sıralama gibi $6!=120$ farklı oturma düzeneği olabileceğini daha önceden bulmuştuk. Şimdi sıralara kimseyi yerleştirmeden önce iki kız arkadaştan birisini alıp bu sıralara ilk önce onu rasgele yerleştirmeyi düşünelim. Zaten rasgele oturmalarda da aynı anda herkes farklı bir yere oturamayacak, herkes bir sekans (sequence) olarak oturmak zorunda kalacaktır. Bunu biraz düşünürsek anlarız. Boş altı sırayı kafamızda hayal edip iki kız arkadaşımızdan birini boş yerlerden birine koymayı düşündüğümüzde karşımıza iki durum çıkacaktır. İlk durumda kız arkadaşımızın kenar sıralara değil de orta sıralara oturma ihtimali, ikincisi de bunun tamamlayıcısı (complementary) olan kenardaki sıralara oturma ihtimali. Örneklem uzay $S$ (sample space) diye burada tanıttığımız olasılıklar uzayının bu şekilde ikiye bölünmesinin sebebi ilk yerleşen kız arkaşımızın ortaya oturduğu takdirde her iki yanına da kız arkadaşının gelebilem ihtimalinin, kenara oturduğu zaman değişmesi. Mesela aşağıki görselde ilk oturan kız arkadaşımızın 3. sıraya oturduğunu farz edelim. Bu durumda ilk oturan kızın arkadaşı olan kız geri kalan beş sıradan ikisine oturabilir</p>
+<p align="justify">Aynen yukarıdaki sıralama gibi $6!=720$ farklı oturma düzeneği olabileceğini daha önceden bulmuştuk. Şimdi sıralara kimseyi yerleştirmeden önce iki kız arkadaştan birisini alıp ilk önce onu rasgele yerleştirmeyi düşünelim. Zaten rasgele oturmalarda aynı anda herkes farklı bir yere oturamayacak, herkes bir sekans (sequence) hâlinde oturmak zorunda kalacaktır. Bunu biraz düşünürsek anlarız. Boş altı sırayı kafamızda hayal edip iki kız arkadaşdan birini boş yerlerden birine koymayı düşündüğümüzde karşımıza iki durum çıkacaktır. İlk durumda kız arkadaşımızın kenar sıralara değil de orta sıralara oturma ihtimali, ikincisi de bunun tamamlayıcısı (complementary) olan kenardaki sıralara oturma ihtimali. Örneklem uzay $S$ (sample space) diye burada tanıttığımız olasılıklar uzayının bu şekilde ikiye bölünmesinin sebebi, ilk yerleşen kız arkaşımız ortaya oturduğu takdirde her iki yanına da kız arkadaşının gelebilme ihtimali varken, kenara oturduğu zaman sadece bir yanının müsait olması. Mesela aşağıdaki görselde ilk oturan kız arkadaşın 3. sıraya oturduğunu farz edelim. Bu durumda öbür kız geri kalan beş sıradan ikisine oturabilir.</p>
 
 | 1. sıra | 2. sıra | 3. sıra | 4. sıra | 5. sıra | 6. sıra |
 |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |
@@ -52,19 +68,19 @@ $$P(A) = \frac{5! 2!}{6!}= \frac{1}{3} = 0.33$$
 |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |
 |  | K | <b>K</b> |  |  |  |
 
-<p align="justify">ki bu yanyana oturma ihtmallerini $\frac{2}{5}$ yapar. Öte yandan aşağıdaki örnek sıralamadaki gibi ilk oturan kız kenara oturursa<p>
+<p align="justify">Bu yanyana oturma ihtimallerini $\frac{2}{5}$ yapar. Öte yandan aşağıdaki örnek sıralamadaki gibi ilk oturan kız kenara oturursa<p>
 
 | 1. sıra | 2. sıra | 3. sıra | 4. sıra | 5. sıra | 6. sıra |
 |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |
 |  |  |  |  | K | <b>K</b> |
 
-<p align="justify">o zaman da arkadaşının onun yanına oturma ihtimali $\frac{1}{5}$ olur. Şimdi burada ilk oturan kızın ortaya ve kenara oturma durumlarını sembolik olarak olaylar şeklinde tanımlayalım.<p>
+<p align="justify">o zaman da arkadaşının onun yanına oturma ihtimali $\frac{1}{5}$ olur. Şimdi burada ilk oturan kızın ortaya ve kenara oturma durumlarını olaylar şeklinde tanımlayalım.<p>
 
 $$O: \text{İlk oturan kızın ortaya oturması}$$
 
 $$O': \text{İlk oturan kızın kenara oturması}$$
 
-<p align="justify">Eğer bir üçüncü durum söz konusu olsaydı onu da hesaba katmalıydık ama burada örneklem uzay ikiye bölünmüş halde. İlgilendiğimiz olay olan "iki kızın yanyana gelmesi" durumunu yukarıda $A$ olarak tanımlamıştık. O zaman örneklem uzayın Venn şeması hâlinde temsili aşağıdaki gibi olur.</p>
+<p align="justify">Eğer bir üçüncü durum söz konusu olsaydı (önümüzdeki haftalarda böyle ikiden fazla alt uzaya bölünen örnekler yapacağız) onu da hesaba katmalıydık ama burada örneklem uzay ikiye bölünmüş halde. İlgilendiğimiz olay olan "iki kızın yanyana gelmesi" durumunu yukarıda $A$ olarak tanımlamıştık. O zaman örneklem uzayın Venn şeması hâlinde temsili aşağıdaki gibi olur.</p>
 
 <img src="resim/question1.jpg" alt="yanyana oturma sorusu örneklem uzay" width="400" height=auto>
 
@@ -74,7 +90,7 @@ $$ A | O: \text{İlk oturan kız ortaya oturduğunda yanyana gelmeleri}$$
 
 $$ A | O': \text{İlk oturan kız kenara oturduğunda yanyana gelmeleri}$$
 
-<p align="justify">Burada ilk önce "ilk kızın ortaya oturması ve o ortaya oturduğunda arkadaşının onun yanına gelmesi ihtimalini" hesap edecek, hemen ardından yaptığımız işlemin örneklem uzayda tamamlayıcısı olan "ilk kızın kenara oturması ve o kenara oturduğunda arkadaşının onun yanına gelmesi" ihtimalini de bulacağız. Son olarak da elde edilen ihtimalleri toplayıp bütün durumlar için "iki arkadaşın yanyana gelme" olasılığını göreceğiz.</p>
+<p align="justify">Burada ilk önce "ilk kızın ortaya oturması ve o ortaya oturduğunda arkadaşının onun yanına gelmesi ihtimalini" hesap edecek, hemen ardından yaptığımız işlemin örneklem uzayda tamamlayıcısı olan "ilk kızın kenara oturması ve o kenara oturduğunda arkadaşının onun yanına gelmesi" ihtimalini bulacağız. Son olarak elde edilen ihtimalleri toplayıp bütün durumlar için "iki arkadaşın yanyana gelme" olasılığını göreceğiz.</p>
 
 $$P(A) = P(A|O)P(O)+P(A|O')P(O')$$
 
@@ -88,7 +104,7 @@ $$P(A) = \frac{1}{3}=0.33$$
 
 <p align="justify"><b>Çözüm 3:</b> Şu ana kadar izlediğimiz yolların hepsi matematiksel çözüm denilen analitik çözümlerdi. Burada bilgisayarlarda yer alan sayıcıları (counter) ve zamanlayıcıları (timer) kullanarak rasgele sayı üreten (random number generation) algoritmalar ile çözümü simüle edeceğiz. Bunu yapmak için istatistikteki <b>büyük sayılar kanunu</b>ndan (the law of large numbers) faydalanacağız. Sonuçta çözümü bir de nümerik olarak bulmaya çalışacağız.</p>
 
-<p align="justify">Aşağıdaki kodları değişik seferlerde koşturduğumuzda kız arkadaşların yanyana denk gelme olasılığının teoride hesaplanan değere yakın olduğunu, özellikle $n$ parametresi olan örnek sayısı (number of samples) değişkenini büyüttükçe her denemede olasılığın iyice $0.33$'e yaklaştığını görebiliriz.</p>
+<p align="justify">Aşağıdaki kodları değişik seferlerde koşturduğumuzda kız arkadaşların yanyana denk gelme olasılığının teoride hesaplanan değere yakın olduğunu, özellikle $n$ parametresi olan örnek sayısı (number of samples) değişkenini büyüttükçe kodun her koşturulmasında olasılığın iyice $0.33$'e yaklaştığını görebiliriz.</p>
 
 <h5><b>question1.py</b></h5>
 
@@ -125,3 +141,115 @@ for i=1:n
 end
 fprintf('Toplam %i örnekle yapılan denemede olasılık %.3f bulundu.\n', n, count/n);
 ```
+
+<p align="justify"><b>Soru 2:</b> İki arkadaş sinemaya gidiyorlar. Girdikleri sinema salonu 5 x 10 kapasitelik. Yani 5 sıra var ve her bir sırada 10 koltuk var. Arkadaşlar birbirlerinden habersiz bilet alıyorlar. Koşullu Olasılık ve Toplam Olasılık kavramlarını kullanarak iki arkadaşın filmi yan yana izleme olasılıklarını bulunuz.</p>
+
+<img src="resim/sinema salonu koşullu ve toplam olasılık.jpg" alt="5x10 boyutunda bir sinema salonu" width=400 height=auto>
+
+<p align="justify"><b>Soru 3: (Kombinasyon)</b> Evde meyve olarak Elma, Muz, Portakal, Ananas ve Üzüm var. Gelen misafire meyve ikram edilecek. Ev sahipleri yukarıda sayılan beş çeşit meyveden üç tanesini beraber ikram etmeye karar veriyor.</p>
+
+<ul>
+<li>Kaç farklı meyve tabağı hazırlanabilir?</li>
+<li>İkram edilen tabaklarda elma ve portakal bulunma olasılığı nedir?</li>
+</ul>
+
+<p align="justify">Not: Kombinasyon ile yapamazsanız sayarak yapabilirsiniz. Mesela bütün kombinasyonların bulunduğu küme</p>
+
+$$S = \begin{matrix} \left\{ EMP, EMA, EMÜ, … \right\} \end{matrix}$$
+
+<p align="justify">şeklinde devam etmektedir. Kendiniz bu kümeyi tamamen oluşturup sonra ilgili kombinasyonları sayarak cevabı bulabilirsiniz.</p>
+
+<p align="justify"><b>Soru 4: (Kombinasyon)</b> Bir sepette 15 kahverengi ve 10 beyaz yumurta bulunmaktadır. Aynı anda 5 yumurta seçiliyor. Alınan yumurtalardan 3 tanesinin beyaz olma olasılığını bulunuz.</p>
+
+<p align="justify"><b>Soru 5: (Koşullu ve Toplam Olasılık)</b> Real Madrid'in genç yıldızı Arda Güler'in bu sezon Real Madrid'den ayrılma ihtimâli %40'tır. Arda takımda kalırsa %30 ihtimalle maçlarda oynayacakken başka bir takıma transfer olması durumunda maçlarda oynama olasılığı %90 olacaktır. Arda'nın bu sezon maçlarda oynama olasılığını koşullu olasılık ve toplam olasılık kullanarak bulunuz.</p>
+
+<p align="justify"><b>Çözüm 5:</b> İlk önce olayları tanımlayalım.</p>
+
+$$ \text{RM: Real Madrid'de kalma}$$
+
+$$ \text{RM': Real Madrid'den ayrılma}$$
+
+$$ \text{O | RM: Real Madrid'de oynama}$$
+
+$$ \text{O | RM': Başka takımda oynama}$$
+
+$$ \text{O: Oynama}$$
+
+<p align="justify">Verilen bilgiler ve tanımlanan olaylar ışığında Arda'nın bu sezon oynama ihtimalini bulalım.</p>
+
+$$P(O) = P(O|\text{RM})P(\text{RM})+P(O|\text{RM'})P(\text{RM'})$$
+
+<p align="justify">Değerleri yerlerine koyarsak</p>
+
+$$P(O) = \frac{30}{100}\frac{60}{100}+\frac{90}{100}\frac{40}{100}$$
+
+<p align="justify">ve sadeleştirme yaparak işlemleri yaparsak</p>
+
+$$P(YL) = \frac{54}{100}=0.54$$
+
+<p align="justify">yâni %54 buluruz.</p>
+
+<p align="justify"><b>Soru 6: (Koşullu ve Toplam Olasılık)</b> Abdurrahman lisans eğitiminden sonra %30 ihtimalle memleketi Çad'a geri dönecek, %50 ihtimalle Türkiye'de kalacak, ya da Avrupa veya Amerika'ya gidecek. Çad'a dönerse yüksek lisans yapma olasılığı %20, Türkiye'de kalırsa %60, Avrupa veya Amerika'ya giderse %30. Bu bilgilere göre Abdurrahman'ın lisans eğitimi sona erdiğinde yüksek lisans yapma ihtimali nedir?</p>
+
+<p align="justify"><b>Çözüm 6:</b> İlk önce olayları tanımlayalım.</p>
+
+$$ \text{Ç: Çad'a gidiyor}$$
+
+$$ \text{T: Türkiye'de kalıyor}$$
+
+$$ \text{A: Avrupa veya Amerika'ya gidiyor}$$
+
+$$ \text{YL | Ç: Çad'a gidince Yüksek Lisans yapıyor}$$
+
+$$ \text{YL | T: Türkiye'de kalınca Yüksek Lisans yapıyor}$$
+
+$$ \text{YL | A: Avrupa veya Almanya'ya gidince Yüksek Lisans yapıyor}$$
+
+$$ \text{YL : Yüksek Lisans yapıyor}$$
+
+<p align="justify">Verilen bilgiler ve tanımlanan olaylar ışığında lisans eğitiminden sonra Abdurrahman'ın yüksek lisans (YL) yapma olasılığını hesaplayalım.</p>
+
+$$P(YL) = P(YL|\text{Ç})P(\text{Ç})+P(YL|\text{T})P(\text{T})+P(YL|\text{A})P(\text{A})$$
+
+<p align="justify">Değerleri yerlerine koyarsak</p>
+
+$$P(YL) = \frac{20}{100}\frac{30}{100}+\frac{60}{100}\frac{50}{100}+\frac{30}{100}\frac{20}{100}$$
+
+
+<p align="justify">ve sadeleştirme yaparak işlemleri yaparsak</p>
+
+$$P(YL) = \frac{42}{100}=0.42$$
+
+<p align="justify">yâni %42 buluruz.</p>
+
+<p align="justify"><b>Soru 7: (Histogram)</b> Bir sınıftaki öğrencilerin yaşları sayıldığında aşağıda verilen histogram ortaya çıkmıştır. Buna göre sınıfta toplam kaç öğrenci vardır? Aşağıda tanımlanan olaylara göre histogramdaki bilgiler ışığında istenilen olasılıkları bulunuz.</p>
+
+<img src="resim/class_age_histogram.png" alt="sınıftaki öğrencilerin yaş histogramı" width=400 height=auto>
+
+$$ \text{A : Seçilen birinin 21 yaşından büyük olması}$$
+
+$$ \text{B : Seçilen birinin 20 yaşına eşit veya küçük olması}$$
+
+$$ \text{C : Seçilen birinin 20 yaşından küçük veya 21 yaşından büyük olması}$$
+
+$$ \text{D : Seçilen birinin 18 yaşında olması}$$
+
+$$ \text{E : Seçilen birinin 20 yaşından küçük olması}$$
+
+$$ \text{F : Seçilen birinin yaşının çift sayı olması}$$
+
+$$P(A)=?$$
+$$P(B)=?$$
+$$P(C)=?$$
+$$P(D)=?$$
+$$P(D|E)=?$$
+$$P(E|F')=?$$
+$$P(D|F)=?$$
+
+$$P(A)=\frac{6+3+1}{100}=\frac{9}{100}=0.09$$
+$$P(B)=\frac{34+25+4+1}{100}=\frac{64}{100}=0.64$$
+$$P(C)=\frac{(1+4+25)+(6+3+1)}{100}=\frac{40}{100}=0.4$$
+$$P(D)=\frac{4}{100}=0.04$$
+$$P(D|E)=\frac{4}{1+4+25}=\frac{2}{15} \approx 0.13$$
+$$P(E|F')=\frac{1+4+25}{1+25+26+3}=\frac{30}{55}=\frac{6}{11} \approx 0.55$$
+$$P(D|F)=\frac{4}{4+34+6+1}=\frac{4}{45} \approx 0.088$$
