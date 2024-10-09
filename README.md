@@ -155,7 +155,7 @@ fprintf('Toplam %i örnekle yapılan denemede olasılık %.3f bulundu.\n', n, co
 
 <p align="justify">Not: Kombinasyon ile yapamazsanız sayarak yapabilirsiniz. Mesela bütün kombinasyonların bulunduğu küme</p>
 
-$$S = \begin{matrix} \left\{ EMP, EMA, EMÜ, … \right\} \end{matrix}$$
+<p>S = { EMP, EMA, EMÜ, … }</p>
 
 <p align="justify">şeklinde devam etmektedir. Kendiniz bu kümeyi tamamen oluşturup sonra ilgili kombinasyonları sayarak cevabı bulabilirsiniz.</p>
 
@@ -224,7 +224,7 @@ $$P(YL) = \frac{42}{100}=0.42$$
 
 <p align="justify"><b>Soru 7: (Histogram)</b> Bir sınıftaki öğrencilerin yaşları sayıldığında aşağıda verilen histogram ortaya çıkmıştır. Buna göre sınıfta toplam kaç öğrenci vardır? Aşağıda tanımlanan olaylara göre histogramdaki bilgiler ışığında istenilen olasılıkları bulunuz.</p>
 
-<img src="resim/class_age_histogram.png" alt="sınıftaki öğrencilerin yaş histogramı" width=400 height=auto>
+<img src="resim/class_age_histogram.png" alt="sınıftaki öğrencilerin yaş histogramı" width=500 height=auto>
 
 $$ \text{A : Seçilen birinin 21 yaşından büyük olması}$$
 
