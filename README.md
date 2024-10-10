@@ -204,11 +204,11 @@ $$\frac{\binom{3}{1}}{\binom{5}{3}} = \frac{3}{10} = 0.3$$
 <p align=justify>Yâni %30 ihtimalle tabaklarda elma ve portakal birlikte yer alırlar. Bu sonucun aynısını yukarıda Python kodunda yazdırdığımız listeden de sayarak bulabiliriz.</p>
 
 <ol>
-<li><b>('Elma', 'Muz', 'Portakal')</b></li>
+<li><b>('Elma', 'Muz', 'Portakal') <=== Elma ve Portakal beraber</b></li>
 <li>('Elma', 'Muz', 'Ananas')</li>
 <li>('Elma', 'Muz', 'Üzüm')</li>
-<li><b>('Elma', 'Portakal', 'Ananas')</b></li>
-<li><b>('Elma', 'Portakal', 'Üzüm')</b></li>
+<li><b>('Elma', 'Portakal', 'Ananas') <=== Elma ve Portakal beraber</b></li>
+<li><b>('Elma', 'Portakal', 'Üzüm') <=== Elma ve Portakal beraber</b></li>
 <li>('Elma', 'Ananas', 'Üzüm')</li>
 <li>('Muz', 'Portakal', 'Ananas')</li>
 <li>('Muz', 'Portakal', 'Üzüm')</li>
