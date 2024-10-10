@@ -82,7 +82,7 @@ $$O': \text{İlk oturan kızın kenara oturması}$$
 
 <p align="justify">Eğer bir üçüncü durum söz konusu olsaydı (önümüzdeki haftalarda böyle ikiden fazla alt uzaya bölünen örnekler yapacağız) onu da hesaba katmalıydık ama burada örneklem uzay ikiye bölünmüş halde. İlgilendiğimiz olay olan "iki kızın yanyana gelmesi" durumunu yukarıda $A$ olarak tanımlamıştık. O zaman örneklem uzayın Venn şeması hâlinde temsili aşağıdaki gibi olur.</p>
 
-<img src="resim/question1.jpg" alt="yanyana oturma sorusu örneklem uzay" width="400" height=auto>
+<img src="image/question1.jpg" alt="yanyana oturma sorusu örneklem uzay" width="400" height=auto>
 
 <p align="justify">Uzayda koşullu olasılıklara bakmaya başlıyoruz.</p>
 
@@ -144,7 +144,7 @@ fprintf('Toplam %i örnekle yapılan denemede olasılık %.3f bulundu.\n', n, co
 
 <p align="justify"><b>Soru 2:</b> İki arkadaş sinemaya gidiyorlar. Girdikleri sinema salonu 5 x 10 kapasitelik. Yani 5 sıra var ve her bir sırada 10 koltuk var. Arkadaşlar birbirlerinden habersiz bilet alıyorlar. Koşullu Olasılık ve Toplam Olasılık kavramlarını kullanarak iki arkadaşın filmi yan yana izleme olasılıklarını bulunuz.</p>
 
-<img src="resim/sinema salonu koşullu ve toplam olasılık.jpg" alt="5x10 boyutunda bir sinema salonu" width=400 height=auto>
+<img src="image/sinema salonu koşullu ve toplam olasılık.jpg" alt="5x10 boyutunda bir sinema salonu" width=400 height=auto>
 
 <p align="justify"><b>Soru 3: (Kombinasyon)</b> Evde meyve olarak Elma, Muz, Portakal, Ananas ve Üzüm var. Gelen misafire meyve ikram edilecek. Ev sahipleri yukarıda sayılan beş çeşit meyveden üç tanesini beraber ikram etmeye karar veriyor.</p>
 
@@ -224,7 +224,7 @@ $$P(YL) = \frac{42}{100}=0.42$$
 
 <p align="justify"><b>Soru 7: (Histogram)</b> Bir sınıftaki öğrencilerin yaşları sayıldığında aşağıda verilen histogram ortaya çıkmıştır. Buna göre sınıfta toplam kaç öğrenci vardır? Aşağıda tanımlanan olaylara göre histogramdaki bilgiler ışığında istenilen olasılıkları bulunuz.</p>
 
-<img src="resim/class_age_histogram.png" alt="sınıftaki öğrencilerin yaş histogramı" width=500 height=auto>
+<img src="image/class_age_histogram.png" alt="sınıftaki öğrencilerin yaş histogramı" width=500 height=auto>
 
 $$ \text{A : Seçilen birinin 21 yaşından büyük olması}$$
 
