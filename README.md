@@ -165,7 +165,7 @@ fprintf('Toplam %i örnekle yapılan denemede olasılık %.3f bulundu.\n', n, co
 
 $$\binom{5}{3} = \frac{5!}{3!(5-3)!}=\frac{5!}{3!2!}=\frac{5x4}{2}=10$$
 
-<p align="justify">Toplam 10 farklı meyve tabağı hazırlanabilir. Bu tabakalrı aşağıdaki Python koduyla ekrana bastırarak görebiliriz.</p>
+<p align="justify">Toplam 10 farklı meyve tabağı hazırlanabilir. Bu tabakları aşağıdaki Python koduyla ekrana basarak görebiliriz.</p>
 
 <b>question3.py</b>
 
@@ -197,11 +197,24 @@ for c in comb_list:
 <li>('Portakal', 'Ananas', 'Üzüm')</li>
 </ol>
 
-<p align=justify>İkram edilen tabaklarda elma ve portakal bulunma olasılığı sorulmuştu. Bu iki meyveyi tabakta kabul edersek bir meyvelik boş yer kalıyor. Buraya üç meyveden birisi gelebilir.</p>
+<p align=justify>İkram edilen tabaklarda elma ve portakal bulunma olasılığı sorulmuştu. Bu iki meyvenin tabaktaysa o zaman bir meyvelik boş yer var demektir. Buraya da üç meyveden birisi gelebilir.</p>
 
 $$\frac{\binom{3}{1}}{\binom{5}{3}} = \frac{3}{10} = 0.3$$
 
 <p align=justify>Yâni %30 ihtimalle tabaklarda elma ve portakal birlikte yer alırlar. Bu sonucun aynısını yukarıda Python kodunda yazdırdığımız listeden de sayarak bulabiliriz.</p>
+
+<ol>
+<li><b>('Elma', 'Muz', 'Portakal')</b></li>
+<li>('Elma', 'Muz', 'Ananas')</li>
+<li>('Elma', 'Muz', 'Üzüm')</li>
+<li><b>('Elma', 'Portakal', 'Ananas')</b></li>
+<li><b>('Elma', 'Portakal', 'Üzüm')</b></li>
+<li>('Elma', 'Ananas', 'Üzüm')</li>
+<li>('Muz', 'Portakal', 'Ananas')</li>
+<li>('Muz', 'Portakal', 'Üzüm')</li>
+<li>('Muz', 'Ananas', 'Üzüm')</li>
+<li>('Portakal', 'Ananas', 'Üzüm')</li>
+</ol>
 
 <p align="justify"><b>Soru 4: (Kombinasyon)</b> Bir sepette 15 kahverengi ve 10 beyaz yumurta bulunmaktadır. Aynı anda 5 yumurta seçiliyor. Alınan yumurtalardan 3 tanesinin beyaz olma olasılığını bulunuz.</p>
 
