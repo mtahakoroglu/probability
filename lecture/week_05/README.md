@@ -13,7 +13,7 @@
 </li>
 </ul>
 
-<img src="../../image/trabzon_gumushane_bus.png" alt="Trabzon Gümüşhane sabah 8 otobüsü histogram" width=400 height=auto>
+<img src="../../image/trabzon_gumushane_bus.png" alt="Trabzon Gümüşhane sabah 8 otobüsü histogram" width=500 height=auto>
 
 <p align="justify"><b>Cevap 9:</b></p>
 
@@ -36,7 +36,7 @@ $$f_X(x) = e^{-\lambda x} \text{ for } x \geq 0$$
 <li>Grafikte görselleştirilen veriyi normalize ederek histogramı tekrar çiziniz.</li>
 </ul>
 
-<img src="../../image/student_waiting_at_bus_stop.png" alt="öğrenci ara durak'ta otobüs bekleme histogramı" width=400 height=auto>
+<img src="../../image/student_waiting_at_bus_stop.png" alt="öğrenci ara durak'ta otobüs bekleme histogramı" width=500 height=auto>
 
 <p align="justify"><b>Cevap 10: </b></p>
 
@@ -64,7 +64,7 @@ olacak şekilde bunları çizdiriyor: İlk dağılım sabah seferlerine ait iken
 | :---: |    :---:    |
 | <img src="../../image/bursa_istanbul_bus_morning.png"> | <img src="../../image/bursa_istanbul_bus_afternoon_night.png"> |
 
-<p align="justify"><b>Cevap 11: </b>Diğer koşullu olasılık ve toplam olasılık sorularında olduğu gibi Örneklem Uzayı (Sample Space) S (otobüsün sabah vakitlerinde ayrılması) ve S' (otobüsün öğlen-akşam vakitlerinde ayrılması) olarak iki olaya ayıralım. Ardından Y olayını da 08:03'te otogara gidildiğinde otobüsü yakalama olarak tanımlarsak aşağıdaki hesaplamalrı yapabiliriz.</p>
+<p align="justify"><b>Cevap 11: </b>Diğer koşullu olasılık ve toplam olasılık sorularında olduğu gibi Örneklem Uzayı (Sample Space) S (otobüsün sabah vakitlerinde ayrılması) ve S' (otobüsün öğlen-akşam vakitlerinde ayrılması) olarak iki olaya ayıralım. Ardından Y olayını da 08:03'te otogara gidildiğinde otobüsü yakalama olarak tanımlarsak aşağıdaki hesaplamaları yapabiliriz.</p>
 
 <img src="../../image/question11.jpg" alt="histogram koşullu olasılık için örneklem uzayı" width=300 height=auto>
 
