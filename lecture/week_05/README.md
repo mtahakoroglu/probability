@@ -60,6 +60,27 @@ olacak şekilde bunları çizdiriyor: İlk dağılım sabah seferlerine ait iken
 <li>Yolcu, sabah-öğle-akşam ayırt edilmeden herhangi bir sefere saat başını 3 geçe otogarda olacak şekilde gelirse, kaç ihtimalle otobüsü yakalar?</li>
 </ul>
 
-| sabah | öğlen-akşam |
+|       |             |
 | :---: |    :---:    |
 | <img src="../../image/bursa_istanbul_bus_morning.png"> | <img src="../../image/bursa_istanbul_bus_afternoon_night.png"> |
+
+<p align="justify"><b>Cevap 11: </b>Diğer koşullu olasılık ve toplam olasılık sorularında olduğu gibi Örneklem Uzayı (Sample Space) S (otobüsün sabah vakitlerinde ayrılması) ve S' (otobüsün öğlen-akşam vakitlerinde ayrılması) olarak iki olaya ayıralım. Ardından Y olayını da 08:03'te otogara gidildiğinde otobüsü yakalama olarak tanımlarsak aşağıdaki hesaplamalrı yapabiliriz.</p>
+
+<img src="../../image/question11.jpg" alt="histogram koşullu olasılık için örneklem uzayı" width=300 height=auto>
+
+
+$$P(Y|S) = \frac{6}{60} = 0.1$$
+
+$$P(Y|S') = \frac{38}{140} = 0.1$$
+
+$$P(Y) = P(Y|S)P(S) + P(Y|S')P(S')$$
+
+$$P(Y) = \frac{6}{60} \frac{60}{200} + \frac{38}{140} \frac{140}{200}$$
+
+$$P(Y) = \frac{1}{10} \frac{3}{10} + \frac{19}{70} \frac{7}{10}$$
+
+$$P(Y) = \frac{1}{10} \frac{3}{10} + \frac{19}{70} \frac{7}{10}$$
+
+$$P(Y) = \frac{3}{100} + \frac{19}{100}$$
+
+$$P(Y) = \frac{22}{100} = 0.22$$
