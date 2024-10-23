@@ -1,5 +1,4 @@
-<h3>Hafta 3</h3>
-<h4>Koşullu/Toplam Olasılık - devam</h4>
+<h3>Hafta 3: Koşullu/Toplam Olasılık - devam</h3>
 
 <p align="justify"><b>Soru 5: (Koşullu ve Toplam Olasılık)</b> Real Madrid'in genç yıldızı Arda Güler'in bu sezon Real Madrid'den ayrılma ihtimâli %40'tır. Arda takımda kalırsa %30 ihtimalle maçlarda oynayacakken başka bir takıma transfer olması durumunda maçlarda oynama olasılığı %90 olacaktır. Arda'nın bu sezon maçlarda oynama olasılığını koşullu olasılık ve toplam olasılık kullanarak bulunuz.</p>
 
