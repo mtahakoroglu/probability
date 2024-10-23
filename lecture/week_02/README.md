@@ -1,5 +1,5 @@
 <h3>Hafta 2</h3>
-<h4>Kombinasyon ve Koşullu Olasılık ve Toplam Olasılık - devam</h4>
+<h4>Kombinasyon ve Koşullu/Toplam Olasılık - devam</h4>
 
 <p align="justify"><b>Soru 2:</b> İki arkadaş sinemaya gidiyorlar. Girdikleri sinema salonu 5 x 10 kapasitelik. Yani 5 sıra var ve her bir sırada 10 koltuk var. Arkadaşlar birbirlerinden habersiz bilet alıyorlar. Koşullu Olasılık ve Toplam Olasılık kavramlarını kullanarak iki arkadaşın filmi yan yana izleme olasılıklarını bulunuz.</p>
 

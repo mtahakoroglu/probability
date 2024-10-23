@@ -1,5 +1,5 @@
 <h3>Hafta 1</h3>
-<h4>Permütasyon ve Koşullu Olasılık ve Toplam Olasılığa Giriş</h4>
+<h4>Permütasyon ve Koşullu/Toplam Olasılığa Giriş</h4>
 
 <p align="justify">İlk derslerimizde bugüne kadar ortaokul ve lisede en çok karşımıza çıkan permütasyon ve kombinasyon konularını hatırlayacağız. Yalnız burada karşılaştığımız soruları sadece bu metotlarla değil, aynı zamanda gelecek haftalarda öğreneceğimiz toplam olasılık ve koşullu olasılık kavramlarını kullanarak da çözeceğiz. Bu bize güzel bir başlangıç olacak. Analitik (matematiksel) çözümünü farklı yollardan yaptığımız bu soruları ayrıca bilgisayar ortamında bir programlama diliyle rasgele sayı üreteci (random number generator) kullanarak nümerik olarak da çözüp teorik olarak elde ettiğimiz çözümlerin doğruluklarını test edeceğiz.</p>
 
