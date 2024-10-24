@@ -17,7 +17,7 @@
 <p align="justify"><b>Cevap 9:</b></p>
 
 <ul>
-    <li>Öğrenci en geç 08:04'te otogarda olursa (en az) %90 ihtimalle otobüsü yakalar.</li>
+    <li>Öğrenci en geç 08:04'te otogarda olursa (en az) %10 ihtimalle otobüsü yakalar.</li>
     <li>Öğrenci en geç 08:01'te otogarda olursa en az %30 ihtimalle (gerçekte %55 ihtimal) otobüsü yakalar.</li>
     <li>Öğrenci en geç 08:06'da otogarda olursa %2 ihtimalle otobüsü yakalar.</li>
     <li>Öğrenci tam saat 8:03 ile 08:05 arası otogarda bulunursa %13 ihtimalle otobüse biner.</li>
