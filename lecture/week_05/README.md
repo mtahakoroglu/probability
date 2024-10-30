@@ -24,7 +24,7 @@
     <li>Evet, üstel (eksponansiyel) dağılım ile modellenir. Formülüze edilmiş hâli aşağıdaki gibidir. Formüldeki X rasgele değişken (random variable) kavramını temsil etmektedir.</li>
 </ul>
 
-$$f_X(x) = e^{-\lambda x} \text{ for } x \geq 0$$
+$$f_X(x) = \lambda e^{-\lambda x} \text{ for } x \geq 0$$
 
 <p align="justify"><b>Soru 10 (Histogram - Normal Dağılım): </b>Bir öğrenci kaldığı yurttan üniversiteye sabahları 8:00'da dolmuşla gidiyor. Öğrenci bazı günler saat tam 8:00'de ve hatta bazen daha önce bile durakta olmasına rağmen dolmuşu kaçırıyor. Bunun üzerine öğrenci durağa bir kamera sistemi kurarak dolmuşun durağa geliş zamanlarını otomatik olarak 100 gün boyunca kaydediyor. Öğrenci 100 günün sonunda topladığı veriyi çizdirince aşağıdaki grafiği elde ediyor.</p>
 
