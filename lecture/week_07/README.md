@@ -27,13 +27,13 @@ $$f_X(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}$$
 
 <p align="justify"><i>(d)</i> Grafikteki veriden veya bir önceki soruda elde ettiğiniz pdf'den faydalanarak</p>
 
-$$P(X>6) = 0.6$$
+$$P(X \geq 6) = 0.6$$
 
 <p align="justify">değerini hesaplayınız.</p>
 
 <p align="justify"><i>(e)</i> Grafikteki veriden veya <i>(c)</i> şıkkında elde ettiğiniz pdf'den faydalanarak</p>
 
-$$P(5<X<8)$$
+$$P(5 \leq X \leq 8)$$
 
 <p align="justify">değerini hesaplayınız.</p>
 
