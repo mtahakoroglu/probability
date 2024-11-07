@@ -25,25 +25,27 @@ $$f_X(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}$$
 
 <p align="justify"><i>(c)</i> Dağılımın olasılık yoğunluk fonksiyonunu (pdf) normalize ederek elde ediniz.</p>
 
-<p align="justify"><i>(d)</i> Grafikteki veriye veya bir önceki soruda elde ettiğiniz pdf'e göre</p>
+<p align="justify"><i>(d)</i> Grafikteki veriden veya bir önceki soruda elde ettiğiniz pdf'den faydalanarak</p>
 
-$$P(X>6)$$
+$$P(X>6) = 0.6$$
 
-<p align="justify">değerini bulunuz.</p>
+<p align="justify">değerini hesaplayınız.</p>
 
-<p align="justify"><i>(e)</i> Grafikteki veriye veya <i>(c)</i> şıkkında elde ettiğiniz pdf'e göre</p>
+<p align="justify"><i>(e)</i> Grafikteki veriden veya <i>(c)</i> şıkkında elde ettiğiniz pdf'den faydalanarak</p>
 
 $$P(5<X<8)$$
 
-<p align="justify">değerini bulunuz.</p>
+<p align="justify">değerini hesaplayınız.</p>
 
 <p align="justify"><i>(f)</i> Bu soruda ismi geçen dağılım daha önceden gördüğümüz</p>
 
-<ol>
-    <li>Normal dağılımın $\sigma = 0$ hâlidir.</li>
-    <li>Normal dağılımın $\sigma = \infty$ olmuş hâlidir.</li>
-    <li>Üstel dağılımın λ parametresinin 0'a yaklaşırken aldığı hâldir.</li>
-    <li>Üstel dağılımın λ parametresinin ∞'a yaklaşırken aldığı hâldir.</li>
-</ol>
+<ul>
+    <li>Normal dağılımın $\sigma = 0$ hâline,</li>
+    <li>Normal dağılımın $\sigma = \infty$ hâline,</li>
+    <li>Üstel dağılımın λ parametresinin 0'a yaklaşırken aldığı hâle,</li>
+    <li>Üstel dağılımın λ parametresinin ∞'a yaklaşırken aldığı hâle,</li>
+</ul>
+
+<p align="justify">benzemektedir. İki şık doğrudur.</a>
 
 <p align="justify"><i>(g)</i> Gerçek hayatta zar atma ve bir kişinin tutarsızca söylemlerde bulunması örneklerini düşünerek bu olay/davranış tiplerinin tekdüze dağılımla modellenip modellenemeyeceğiniz düşününüz.</p>
