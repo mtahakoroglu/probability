@@ -25,9 +25,17 @@ $$f_X(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}$$
 
 <p align="justify"><i>(c)</i> Dağılımın olasılık yoğunluk fonksiyonunu (pdf) normalize ederek elde ediniz.</p>
 
-<p align="justify"><i>(d)</i> Grafikteki veriye veya bir önceki soruda elde ettiğiniz pdf'e göre $P(X>6)=$?</p>
+<p align="justify"><i>(d)</i> Grafikteki veriye veya bir önceki soruda elde ettiğiniz pdf'e göre</p>
 
-<p align="justify"><i>(e)</i> Grafikteki veriye veya <i>(c)</i> şıkkında elde ettiğiniz pdf'e göre $P(5<X<8)=$?</p>
+$$P(X>6)$$
+
+<p align="justify">değerini bulunuz.</p>
+
+<p align="justify"><i>(e)</i> Grafikteki veriye veya <i>(c)</i> şıkkında elde ettiğiniz pdf'e göre</p>
+
+$$P(5<X<8)$$
+
+<p align="justify">değerini bulunuz.</p>
 
 <p align="justify"><i>(f)</i> Bu soruda ismi geçen dağılım daha önceden gördüğümüz</p>
 
