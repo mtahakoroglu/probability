@@ -29,13 +29,13 @@ $$f_X(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}$$
 
 $$P(X \geq 6) = 0.6$$
 
-<p align="justify">değerini hesaplayınız.</p>
+<p align="justify">olduğunu gösteriniz.</p>
 
 <p align="justify"><i>(e)</i> Grafikteki veriden veya <i>(c)</i> şıkkında elde ettiğiniz pdf'den faydalanarak</p>
 
-$$P(5 \leq X \leq 8)$$
+$$P(5 \leq X \leq 8) = 0.6$$
 
-<p align="justify">değerini hesaplayınız.</p>
+<p align="justify">olduğunu gösteriniz.</p>
 
 <p align="justify"><i>(f)</i> Bu soruda ismi geçen dağılım daha önceden gördüğümüz</p>
 
