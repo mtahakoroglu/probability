@@ -2,7 +2,7 @@
 
 <p align="justify"><b>Soru 12: </b>Aşağıda bir dağılıma ait normalize edilmiş dört histogram verilmiştir. <i>(a)</i> Bu dağılımın ismi nedir? <i>(b)</i> Bu dağılımın parametreleri nelerdir? İsimlerini ve sembollerini yazıp ne manaya geldiklerini açıklayınız. <i>(c)</i> {a, b, c, d, e, f, g, h} değerlerini {0, 0, 0, 0.2, 0.5, 1, 5, -2} değerleriyle eşleyiniz. <i>(d)</i> Sözüne güvenilir ve güvenilmez iki insan var. <i>(i)</i>, <i>(ii)</i>, <i>(iii)</i> ve <i>(iv)</i>'te gösterilen dağılımlarından hangi ikisi bu insanları modelleyemeye uygundur?</p>
 
-<img src="../../image/normal_distribution_parameters.png" alt="normal dağılım parametreleri" width="600" height=auto>
+<img src="../../image/normal_distribution_parameters.png" alt="normal dağılım parametreleri" width=%100 height=auto>
 
 <p align="justify"><b>Cevap 12:</p>
 <p align="justify"></b><i>(a)</i> Bu dağılımın ismi Normal (Gaussian) dağılımdır. Dağılıma ait pdf (beşinci hafta derste gördüğümüz şekilde) aşağıdaki gibidir.</p>
@@ -17,7 +17,7 @@ $$f_X(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}$$
 
 <p align="justify"><b>Soru 13: </b>Aşağıda bir dağılıma ait histogram verilmiştir. Aşağıda sorulan soruları histogramı inceleyerek cevaplayınız.</p>
 
-<img src="../../image/uniform-distribution.png" alt="örnek bir tekdüze dağılım" width=400 height=auto>
+<img src="../../image/uniform-distribution.png" alt="örnek bir tekdüze dağılım" width=600 height=auto>
 
 <p align="justify"><i>(a)</i> Toplam kaç veri vardır?</p>
 
