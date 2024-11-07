@@ -17,26 +17,25 @@ $$f_X(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}$$
 
 <p align="justify"><b>Soru 13: </b>Aşağıda bir dağılıma ait histogram verilmiştir. Aşağıda sorulan soruları histogramı inceleyerek cevaplayınız.</p>
 
-<img src="../../image/uniform-distribution.png" alt="örnek bir tekdüze dağılım" width=600 height=auto>
+<img src="../../image/uniform-distribution.png" alt="örnek bir tekdüze dağılım" width=800 height=auto>
 
-<p align="justify"><i>(a)</i> Toplam kaç veri vardır?</p>
+<p align="justify"><i>(a)</i> Toplam kaç veri vardır? ($n=100000$)</p>
 
+<p align="justify"><i>(b)</i> Bu dağılımın ismi nedir? (Tekdüze (uniform) dağılım).</p>
 
-<p align="justify"><b>Cevap 13: </b><i>(a) Toplam <i>(iv)</i> $n=100000$ veri var.</p>
+<p align="justify"><i>(c)</i> Dağılımın olasılık yoğunluk fonksiyonunu (pdf) normalize ederek elde ediniz.</p>
 
+<p align="justify"><i>(d)</i> Grafikteki veriye veya bir önceki soruda elde ettiğiniz pdf'e göre $P(X>6)=$?</p>
 
-$$P(Y|S) = \frac{6}{60} = \frac{1}{10}$$
+<p align="justify"><i>(e)</i> Grafikteki veriye veya <i>(c)</i> şıkkında elde ettiğiniz pdf'e göre $P(5<X<8)=$?</p>
 
-$$P(Y|S') = \frac{38}{140} = \frac{19}{70}$$
+<p align="justify"><i>(f)</i> Bu soruda ismi geçen dağılım daha önceden gördüğümüz</p>
 
-$$P(Y) = P(Y|S)P(S) + P(Y|S')P(S')$$
+<ol>
+    <li>Normal dağılımın $\sigma = 0$ hâlidir.</li>
+    <li>Normal dağılımın $\sigma = \infty$ olmuş hâlidir.</li>
+    <li>Üstel dağılımın λ parametresinin 0'a yaklaşırken aldığı hâldir.</li>
+    <li>Üstel dağılımın λ parametresinin ∞'a yaklaşırken aldığı hâldir.</li>
+</ol>
 
-$$P(Y) = \frac{1}{10} \frac{60}{200} + \frac{19}{70} \frac{140}{200}$$
-
-$$P(Y) = \frac{1}{10} \frac{3}{10} + \frac{19}{70} \frac{7}{10}$$
-
-$$P(Y) = \frac{1}{10} \frac{3}{10} + \frac{19}{10} \frac{1}{10}$$
-
-$$P(Y) = \frac{3}{100} + \frac{19}{100}$$
-
-$$P(Y) = \frac{22}{100} = 0.22$$
+<p align="justify"><i>(g)</i> Gerçek hayatta zar atma ve bir kişinin tutarsızca söylemlerde bulunması örneklerini düşünerek bu olay/davranış tiplerinin tekdüze dağılımla modellenip modellenemeyeceğiniz düşününüz.</p>
