@@ -5,3 +5,7 @@
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_03">Hafta 3: Koşullu/Toplam Olasılık (devam)</a></p>
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_04">Hafta 4: Histogramlara Giriş, Histogramda (Basit) Koşullu Olasılık</a></p>
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_05">Hafta 5: Histogramlar (devam), Dağılımlar ve Rasgele Değişkenlere Giriş, Histogramda Koşullu Olasılık</a></p>
+<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_06">Hafta 6: Üstel (Eksponansiyel) Dağılım Uydurma, Histogramlarda Koşullu/Toplam Olasılık</a></p>
+<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_07">Hafta 7: Normal (Gaussian) Dağılım Parametreleri, Tekdüze (Uniform) Dağılım</a></p>
+<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_09_10">Hafta 9-10: ARA SINAV SORULARI ÇÖZÜMÜ</a></p>
+<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_10_11">Hafta 10-11: BAYES</a></p>

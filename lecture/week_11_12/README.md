@@ -1,6 +1,6 @@
 <h3>Hafta 11-12: BAYES</h3>
 
-<p align="justify"><b>Soru 14: (Koşullu Olasılık Tekrar):</b> Gümüşhane Üniversitesi EEM öğrencileri haftasonu pikniğe gitmeyi planlıyorlar. Havanın yağmurlu olma ihtimali %40'tır. Hava açık olursa %90 ihtimalle pikniğe gidilecek ancak hava yağmurlu olursa pikniğe gitme ihtimali %20'ye düşüyor. Öğrencilerin pikniğe gitme ihtimalini koşullu olasılık ve toplam olasılık kullanarak bulunuz.</p>
+<p align="justify"><b>Soru 14 (Koşullu Olasılık Tekrar):</b> Gümüşhane Üniversitesi EEM öğrencileri haftasonu pikniğe gitmeyi planlıyorlar. Havanın yağmurlu olma ihtimali %40'tır. Hava açık olursa %90 ihtimalle pikniğe gidilecek ancak hava yağmurlu olursa pikniğe gitme ihtimali %20'ye düşüyor. Öğrencilerin pikniğe gitme ihtimalini koşullu olasılık ve toplam olasılık kullanarak bulunuz.</p>
 
 <p align="justify"><b>Çözüm 14:</b> Bu soruyu aşağıdaki Bayes sorusuna hazırlık olsun diye buraya koyduk. Koşullu ve toplam olasılık Bayes formulünün de bir parçası. Pikniğe gitme olayına sembolik olarak P, havanın yağmurlu olma olayına Y dersek, çözüm aşağıdaki gibi bulunur.</p>
 
@@ -10,7 +10,7 @@ $$P(P) = \frac{20}{100}\frac{40}{100} + \frac{90}{100}\frac{60}{100}$$
 
 $$P(P) = \frac{62}{100} = 0.62$$
 
-<p align="justify"><b>Soru 15: (Bayes)</b> Bir lisedeki öğrencilerin %40'ı kızdır. Kızların %80'i erkeklerin ise %50'si basketbol kulübüne üyedir. 
+<p align="justify"><b>Soru 15 (Bayes):</b> Bir lisedeki öğrencilerin %40'ı kızdır. Kızların %80'i erkeklerin ise %50'si basketbol kulübüne üyedir. 
 <ul>(a) Basketbol kulübünden rasgele bir şekilde bir temsilci seçilecektir. Bu temsilcinin kız olma olasılığını bulunuz.</ul>
 <ul>(b) Liseden rasgele bir şekilde bir temsilci seçilecektir. Bu temsilcinin basketbol kulübünden olma olasılığını bulunuz.</ul>
 </ul>
