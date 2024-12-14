@@ -1,3 +1,3 @@
 <h3>HAFTA 9-10: ARA SINAV SORULARI ÇÖZÜMÜ</h3>
 
-<p align="justify">Ara sınav haftası olan 8. haftadan sonraki haftada derse kimse gelmediğinden ders işlemedik arkadaşlar. 10. hafta dersinde de ara sınav sorularını çözdük. Final sınavına ara sınav sorularından bazılarını bonus olarak soracağımızı söyledik.</p>
+<p align="justify">Ara sınav haftası olan 8. haftadan sonraki haftada derse kimse gelmediğinden ders işlemedik. 10. hafta dersinde ise ara sınav sorularını çözdük. Final sınavında ara sınav sorularından bazılarını bonus olarak soracağımızı söyledik. Açıkçası finalde alacağınız bonus puanlardan 20 puanı peşinen size vermiş oldum. Bu noktadan sonra bu dersten başarısız olan öğrenciler kimseyi suçlamamalılar.</p>
