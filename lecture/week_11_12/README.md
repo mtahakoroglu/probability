@@ -10,12 +10,17 @@ $$P(P) = \frac{20}{100}\frac{40}{100} + \frac{90}{100}\frac{60}{100}$$
 
 $$P(P) = \frac{62}{100} = 0.62$$
 
-<p align="justify"><b>Soru 15 (Bayes):</b> Bir lisedeki öğrencilerin %40'ı kızdır. Kızların %80'i erkeklerin ise %50'si basketbol kulübüne üyedir. 
-<ul>(a) Basketbol kulübünden rasgele bir şekilde bir temsilci seçilecektir. Bu temsilcinin kız olma olasılığını bulunuz.</ul>
-<ul>(b) Liseden rasgele bir şekilde bir temsilci seçilecektir. Bu temsilcinin basketbol kulübünden olma olasılığını bulunuz.</ul>
-</p>
+<p align="justify"><b>Soru 15 (Bayes):</b> Bir lisedeki öğrencilerin %40'ı kızdır. Kızların %80'i erkeklerin ise %50'si basketbol kulübüne üyedir.</p>
+
+<p align="justify"><b>(a)</b> Basketbol kulübünden rasgele bir şekilde bir temsilci seçilecektir. Bu temsilcinin kız olma olasılığını bulunuz.</p>
+
+<p align="justify"><b>(b)</b> Liseden rasgele bir şekilde bir temsilci seçilecektir. Bu temsilcinin basketbol kulübünden olma olasılığını bulunuz.</p>
 
 <p align="justify"><b>Çözüm 15:</b> Soruda bize söylenen verileri matematiğe dökelim.</p>
+
+| P(K) | P(K') | P(B|K) | P(B|K') |
+| :---: | :---: | :---: | :---: |
+| 40/100 | 60/100 | 80/100 | 50/100 |
 
 $$P(K) = \frac{40}{100}$$
 
