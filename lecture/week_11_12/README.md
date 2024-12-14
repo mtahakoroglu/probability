@@ -18,9 +18,21 @@ $$P(P) = \frac{62}{100} = 0.62$$
 
 <p align="justify"><b>Çözüm 15:</b> Soruda bize söylenen verileri matematiğe dökelim.</p>
 
+<!--
 | P(K) | P(K') | P(B|K) | P(B|K') |
 | :---: | :---: | :---: | :---: |
 | 40/100 | 60/100 | 80/100 | 50/100 |
+-->
+
+$$
+\begin{array}{|c|c|c|c|}
+\hline
+P(K) & P(K') & P(B|K) & P(B|K') \\
+\hline
+\frac{40}{100} & \frac{60}{100} & \frac{80}{100} & \frac{50}{100} \\
+\hline
+\end{array}
+$$
 
 $$P(K) = \frac{40}{100}$$
 
