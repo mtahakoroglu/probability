@@ -34,14 +34,6 @@ P(K) & P(K') & P(B|K) & P(B|K') \\
 \end{array}
 $$
 
-$$P(K) = \frac{40}{100}$$
-
-$$P(K') = \frac{60}{100}$$
-
-$$P(B|K) = \frac{80}{100}$$
-
-$$P(B|K') = \frac{50}{100}$$
-
 <p align="justify"><b>(a)</b> Bizden P(K|B) isteniyor. Bu bugüne kadar koşullu ve toplam olasılık sorularında gördüğümüz formattan farklı. İfade tersine dönmüş. Burada Bayes formulü gerekiyor. Bayes formulü aşağıdaki gibi yazılır.</p>
 
 $$P(K|B) = \frac{P(B|K)P(K)}{P(B)}$$
