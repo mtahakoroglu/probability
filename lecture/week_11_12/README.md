@@ -25,12 +25,9 @@ $$P(P) = \frac{62}{100} = 0.62$$
 -->
 
 $$
-\begin{array}{|c|c|c|c|}
-\hline
+\begin{array}{c c c c}
 P(K) & P(K') & P(B|K) & P(B|K') \\
-\hline
 \frac{40}{100} & \frac{60}{100} & \frac{80}{100} & \frac{50}{100} \\
-\hline
 \end{array}
 $$
 

@@ -9,3 +9,4 @@
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_07">Hafta 7: Normal (Gaussian) Dağılım Parametreleri, Tekdüze (Uniform) Dağılım</a></p>
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_09_10">Hafta 9-10: ARA SINAV SORULARI ÇÖZÜMÜ</a></p>
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_11_12">Hafta 10-11: BAYES</a></p>
+<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_11_12">Hafta 12: BAYES - devam</a></p>
