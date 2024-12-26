@@ -1,19 +1,20 @@
 import numpy as np
 
 students = ["Patrick", "Abdullah", "Sefa", "Cindy", "Furkan", "Safa"]
-n = 100
+n = 10000
 count = 0
 
-for _ in range(n):
+for i in range(n):
     np.random.shuffle(students)
-    for i in range(len(students) - 1):
-        print(students, end=" ")
-        if (students[i] == "Sefa" and students[i + 1] == "Safa") or (students[i] == "Safa" and students[i + 1] == "Sefa"):
+    for j in range(len(students) - 1):
+        if (students[j] == "Sefa" and students[j + 1] == "Safa") or (students[j] == "Safa" and students[j + 1] == "Sefa"):
             count += 1
+            print(i+1, end=" ")
+            print(students, end=" ")
             print(1)
             break
-        else:
-            print(0)
+        # else:
+        #     print(0)
 
 probability = count / n
 print(f"Sefa and Safa are next to each other {count} times out of {n} shuffles.")
