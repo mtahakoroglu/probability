@@ -10,5 +10,5 @@
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_09_10">Hafta 9-10: ARA SINAV SORULARI ÇÖZÜMÜ</a></p>
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_11_12">Hafta 11-12: BAYES</a></p>
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_13">Hafta 13: BAYES - devam</a></p>
-<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_14">Hafta 14: Rasgele Sayı Üretici ile Simülasyon</a></p>
+<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_14">Hafta 14: Rasgele Sayı Üreteci ile Simülasyon</a></p>
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_15">Hafta 15: Öğrenci Yaş Histogram - Python Kodu</a></p>

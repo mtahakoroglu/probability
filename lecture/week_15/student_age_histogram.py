@@ -24,7 +24,7 @@ counts, bins, patches = plt.hist(
     ages,
     bins=np.arange(minAge - 0.5, maxAge + 0.5 + 1, 1),
     edgecolor='black',
-    color='gray'
+    color='lightgray'
 )
 for i, patch in enumerate(patches):
     x = patch.get_x() + patch.get_width() / 2
