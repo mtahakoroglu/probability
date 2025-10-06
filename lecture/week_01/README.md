@@ -1,10 +1,10 @@
-<h3>Hafta 1: Permütasyon ve Koşullu/Toplam Olasılığa Giriş</h3>
+<h3>Hafta 1 Önhazırlık: Permütasyon ve Koşullu/Toplam Olasılığa Giriş</h3>
 
-<p align="justify">İlk derslerimizde bugüne kadar ortaokul ve lisede en çok karşımıza çıkan permütasyon ve kombinasyon konularını hatırlayacağız. Yalnız burada karşılaştığımız soruları sadece bu metotlarla değil, aynı zamanda gelecek haftalarda öğreneceğimiz toplam olasılık ve koşullu olasılık kavramlarını kullanarak da çözeceğiz. Bu bize güzel bir başlangıç olacak. Analitik (matematiksel) çözümünü farklı yollardan yaptığımız bu soruları ayrıca bilgisayar ortamında bir programlama diliyle rasgele sayı üreteci (random number generator) kullanarak nümerik olarak da çözüp teorik olarak elde ettiğimiz çözümlerin doğruluklarını test edeceğiz.</p>
+<p align="justify">İlk derslerimizde bugüne kadar ortaokul ve lisede en çok karşımıza çıkan <b>permütasyon</b> ve <b>kombinasyon</b> konularını hatırlayacağız. Yalnız burada karşılaştığımız soruları sadece bu metotlarla değil, aynı zamanda gelecek haftalarda öğreneceğimiz <b>toplam olasılık</b> ve <b>koşullu olasılık</b> kavramlarını kullanarak da çözeceğiz. Bu bize güzel bir başlangıç olacak. Analitik (matematiksel) çözümünü farklı yollardan elde edeceğimiz bu sorularda ayrıca bilgisayar ortamında bir programlama diliyle rasgele sayı üreteci (random number generator) kullanarak nümerik olarak da çözüp teorik olarak elde ettiğimiz çözümlerin doğruluklarını test edeceğiz.</p>
 
-<p align="justify"><b>Soru 1:</b> Bir sınıfta altı öğrenci vardır. Öğrencilerden ikisi kızdır. Öğrenciler sınıfın önde yer alan sıralarına yanyana rasgele oturduklarında kız öğrencilerin yanyana gelme olasılığı nedir?</p>
+<p align="justify"><b>Soru 1:</b> Bir sınıfta altı öğrenci vardır. Öğrencilerden ikisi kızdır. Öğrenciler sınıfın önde yer alan sıralarına yanyana <b>rasgele</b> (random) oturduklarında kız öğrencilerin yanyana gelme olasılığı nedir?</p>
 
-<p align="justify"><b>Çözüm 1:</b> Burada sıraları görselleştirip de "bir sıraya kaç kişi oturabilir" diye düşünerek sayıları tahtaya yazarsak altı öğrencinin sıralara toplam kaç farklı biçimde oturabileceğini hesaplarız. İlk sıraya 6 öğrenci oturabilirken ikinci sıraya doğal olarak 5 kişi oturabilecek ve bu şekilde son sıraya tek öğrenci kalacak biçimde devam edecektir.</p>
+<p align="justify"><b>Çözüm 1:</b> Burada sıraları görselleştirip de "bir sıraya kaç kişi oturabilir?" diye düşünerek sayıları tahtaya yazarsak altı öğrencinin sıralara toplam kaç farklı biçimde oturabileceğini hesaplarız. İlk sıraya 6 öğrenci oturabilirken ikinci sıraya doğal olarak 5 kişi oturabilecek ve bu şekilde son sıraya tek öğrenci kalacak biçimde devam edecektir.</p>
 
 | 1. sıra | 2. sıra | 3. sıra | 4. sıra | 5. sıra | 6. sıra |
 |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |
@@ -42,15 +42,20 @@ $$A: \text{İki kızın yanyana gelmesi}$$
 
 $$P(A) = \frac{5!}{6!}$$
 
-<p align="justify">olarak bulunur. Yalnız buraya kadar kurduğumuz mantıkta birşeyi atladık: Kızları tek bir insan gibi düşünüp de $5!$ değerini elde etmemiz mantıklıydı ama kız öğrenciler kendi aralarında yer değiştirebilirler. Bu durumu da gözönünde bulundurmalıyız. İki kız kendi aralarında</p>
+<p align="justify">olarak bulunur. Yalnız buraya kadar kurduğumuz mantıkta birşeyi atladık: İki kız arkadaşı tek bir insan gibi düşünüp $5!$ değerini elde etmemiz mantıklıydı. Ancak kız öğrenciler kendi aralarında yer değiştirebilirler. Bu durumu gözönünde bulundurmalıyız. İki kız kendi aralarında</p>
 
 $$2!$$
 
-<p align="justify">şekilde oturabilir. Daha önceden elde ettiğimiz çözümü bu durumu da hesaba katarak güncellersek</p>
+<p align="justify">şekilde oturabilir. Daha önceden elde ettiğimiz çözümü bu durumu hesaba katarak güncellersek</p>
 
 $$P(A) = \frac{5! 2!}{6!}= \frac{1}{3} = 0.33$$
 
 <p align="justify">olasılığını buluruz.</p>
+
+<h4>Formülüze Edilmiş Çözüm 1</h4>
+<p align="justify">Yukarıda çözümü elde ederken direkt olarak nümerik değerler kullandık. Burada toplam kişi sayısına $n$ dersek, çözümü aşağıdaki gibi genelleştirebiliriz.</p>
+
+$$P(A) = \frac{(n-1)!\;2!}{n!}= \frac{2}{n}$$
 
 <p align="justify"><b>Çözüm 2:</b> Şimdi bu soruya başka bir açı olan <b>koşullu olasılık</b> ve <b>toplam olasılık</b> kavramları üzerinden yaklaşalım ve ikinci bir teorik yaklaşımla aynı sonucu elde etmeye çalışalım. Kafamızda durumu canlandıralım diye erkeklere E kızlara K diyerek örnek bir sıralamayı aşağıda görselleştirelim.</p>
 
@@ -101,6 +106,17 @@ $$P(A) = \frac{2}{5}\frac{4}{6}+\frac{1}{5}\frac{2}{6}$$
 <p align="justify">olur. Devam edersek yukarıda ilk yolla bulduğumuz değerin aynısını buluruz.</p>
 
 $$P(A) = \frac{1}{3}=0.33$$
+
+<h4>Formülüze Edilmiş Çözüm 2</h4>
+<p align="justify">Yukarıda çözümü elde ederken direkt olarak nümerik değerler kullandık. Burada toplam kişi sayısına $n$ dersek, çözümü aşağıdaki gibi genelleştirebiliriz.</p>
+
+$$P(A) = \frac{2}{n-1}\frac{n-2}{n}+\frac{1}{n-1}\frac{2}{n}$$
+
+$$P(A) = \frac{2n-4+2}{n(n-1)}$$
+
+$$P(A) = \frac{2(n-1)}{n(n-1)}$$
+
+$$P(A) = \frac{2}{n}$$
 
 <p align="justify"><b>Çözüm 3:</b> Şu ana kadar izlediğimiz yolların hepsi matematiksel çözüm denilen analitik çözümlerdi. Burada bilgisayarlarda yer alan sayıcıları (counter) ve zamanlayıcıları (timer) kullanarak rasgele sayı üreten (random number generation) algoritmalar ile çözümü simüle edeceğiz. Bunu yapmak için istatistikteki <b>büyük sayılar kanunu</b>ndan (the law of large numbers) faydalanacağız. Sonuçta çözümü bir de nümerik olarak bulmaya çalışacağız.</p>
 

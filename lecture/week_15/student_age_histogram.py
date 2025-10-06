@@ -14,15 +14,15 @@ def bilgi_olaylar_ihtimaller(ages, n):
     print(f"E|F: 20 yaşından küçük olan bir öğrencinin 18 yaşında olması --> P(E|F): {sum(ages == 18)}/{sum(ages < 20)} = {sum(ages == 18)/sum(ages < 20)}")
     print(f"F|B: 20 yaşında veya daha küçük olan bir öğrencinin 20 yaşından küçük olması --> P(F|B): {sum(ages < 20)}/{sum(ages <= 20)} = {sum(ages < 20) / sum(ages <= 20)}")
 
-numberOfStudents = 100 # öğrenci sayısı
-minAge, maxAge = 18, 23 # yaş aralığı
+numberOfStudents = 25000 # öğrenci sayısı
+minAge, maxAge = 18, 27 # yaş aralığı
 ages = randint(minAge, maxAge+1, numberOfStudents) # rastgele yaşlar (tekdüze dağılım - uniform distribution)
 # olaylar hakkında bilgi veren, ihtimalleri hesaplayan ve ekrana yazdıran fonksiyonu çağır
 bilgi_olaylar_ihtimaller(ages, numberOfStudents)
 # ages dizisinde yer alan yaşları histogramda göster
 counts, bins, patches = plt.hist(
     ages,
-    bins=np.arange(minAge - 0.5, maxAge + 0.5 + 1, 1),
+    bins=np.arange(minAge-0.5, maxAge+0.5+1, 1),
     edgecolor='black',
     color='lightgray'
 )
