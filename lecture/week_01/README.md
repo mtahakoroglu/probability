@@ -53,9 +53,9 @@ $$P(A) = \frac{5! 2!}{6!}= \frac{1}{3} = 0.33$$
 <p align="justify">olasılığını buluruz.</p>
 
 <h4>Formülüze Edilmiş Çözüm 1</h4>
-<p align="justify">Yukarıda çözümü elde ederken direkt olarak nümerik değerler kullandık. Burada toplam kişi sayısına $n$ dersek, çözümü aşağıdaki gibi genelleştirebiliriz.</p>
+<p align="justify">Yukarıda çözümü elde ederken direkt olarak nümerik değerler kullandık. Burada toplam kişi sayısına $k$ dersek, çözümü aşağıdaki gibi genelleştirebiliriz.</p>
 
-$$P(A) = \frac{(n-1)!\;2!}{n!}= \frac{2}{n}$$
+$$P(A) = \frac{(k-1)!\;2!}{k!}= \frac{2}{k}$$
 
 <p align="justify"><b>Çözüm 2:</b> Şimdi bu soruya başka bir açı olan <b>koşullu olasılık</b> ve <b>toplam olasılık</b> kavramları üzerinden yaklaşalım ve ikinci bir teorik yaklaşımla aynı sonucu elde etmeye çalışalım. Kafamızda durumu canlandıralım diye erkeklere E kızlara K diyerek örnek bir sıralamayı aşağıda görselleştirelim.</p>
 
@@ -108,15 +108,15 @@ $$P(A) = \frac{2}{5}\frac{4}{6}+\frac{1}{5}\frac{2}{6}$$
 $$P(A) = \frac{1}{3}=0.33$$
 
 <h4>Formülüze Edilmiş Çözüm 2</h4>
-<p align="justify">Yukarıda çözümü elde ederken direkt olarak nümerik değerler kullandık. Burada toplam kişi sayısına $n$ dersek, çözümü aşağıdaki gibi genelleştirebiliriz.</p>
+<p align="justify">Yukarıda çözümü elde ederken direkt olarak nümerik değerler kullandık. Burada toplam kişi sayısına $k$ dersek, çözümü aşağıdaki gibi genelleştirebiliriz.</p>
 
-$$P(A) = \frac{2}{n-1}\frac{n-2}{n}+\frac{1}{n-1}\frac{2}{n}$$
+$$P(A) = \frac{2}{k-1}\frac{k-2}{k}+\frac{1}{k-1}\frac{2}{k}$$
 
-$$P(A) = \frac{2n-4+2}{n(n-1)}$$
+$$P(A) = \frac{2k-4+2}{k(k-1)}$$
 
-$$P(A) = \frac{2(n-1)}{n(n-1)}$$
+$$P(A) = \frac{2(k-1)}{k(k-1)}$$
 
-$$P(A) = \frac{2}{n}$$
+$$P(A) = \frac{2}{k}$$
 
 <p align="justify"><b>Çözüm 3:</b> Şu ana kadar izlediğimiz yolların hepsi matematiksel çözüm denilen analitik çözümlerdi. Burada bilgisayarlarda yer alan sayıcıları (counter) ve zamanlayıcıları (timer) kullanarak rasgele sayı üreten (random number generation) algoritmalar ile çözümü simüle edeceğiz. Bunu yapmak için istatistikteki <b>büyük sayılar kanunu</b>ndan (the law of large numbers) faydalanacağız. Sonuçta çözümü bir de nümerik olarak bulmaya çalışacağız.</p>
 
