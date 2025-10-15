@@ -1,44 +1,39 @@
-</h2>Hafta 15: Öğrenci Yaş Dağılımı (Histogram) - Python ile Çözüm</h2>
+<h3>Hafta 15: Rasgele Sayı Üreteci ile Simülasyon</h3>
 
-<p align="justify">Aşağıdaki soru ara sınav sorusunun benzeridir. Koddaki öğrenci sayısı, minimum ve maksimum yaş aralığı parametrelerini değiştirerek kendi grafiklerinizi üretebilirsiniz.</p>
+<p align="justify"><b>Soru:</b> Bölüm öğrencilerinden Patrick, Abdullah, Sefa, Cindy, Furkan ve Safa beraber resim çekilecekler. Resimde rasgele biçimde yanyana duracaklar. Öğrencilerden Sefa ile Safa'nın resimde yanyana gelme olasılığı nedir?</p>
 
-<p align="justify">Grafiğe göre sınıfta a) 50 b) 100 c) 200 tane öğrenci vardır (2 Puan). Grafiğe olasılık yoğunluk fonksiyonu olarak bakıldığında verinin tekdüze dağılım olduğu net bir şekilde söylenemez. Bu dağılımın tekdüze dağılım olduğunu ispatlamak için aşağıda verilen kodda hangi parametreyi nasıl değiştirmeliyiz? (2 Puan). Bu grafiğe derslerimizde a) pie b) whisker c) histogram demiştik (2 Puan).</p>
+<p align="justify"><b>Analitik (Matematiksel Çözüm):</b> Bu sorunun çözümünü hem permütasyon yoluyla hem de koşullu ve toplan olasılık formülleriyle derste yaparak cevabı 1/3 bulduk.</p>
 
-<img src="student_age_histogram.png" alt="Student age histogram" width="500" height=auto>
+<p align="justify"><b>Nümerik Çözüm (Simülasyon):</b> EEM 215 Mühendislikte Programlama dersinde öğrendiğimiz rasgele sayı üretecini kullanarak burada bu altı kişiyi toplam <b>n</b> defa rasgele yanyana dizelim ve her sıralama için Sefa ile Safa'nın yanyana gelip gelmediğini kontrol ederek ihtimal hesabını bu sefer sayarak bulalım.</p>
+
+<b>sefa_safa.py</b>
 
 ```
-from numpy.random import randint
-import matplotlib.pyplot as plt
 import numpy as np
 
-def bilgi_olaylar_ihtimaller(ages, n):
-    '''Bir sınıfta yer alan öğrencilerin yaşlarıyla ilgili çizdirilen histogramda tanımlanan olayların (events) 
-    olasılıklarının simülasyonla bulunması ve ekrana yazdırılması'''
-    print(f"A: Öğrencinin 21 yaşından büyük olması --> P(A): {sum(ages > 21)}/{n} = {sum(ages > 21) / n}")
-    print(f"B: Öğrencinin 20 yaşında veya daha küçük olması --> P(B): {sum(ages <= 20)}/{n} = ", sum(ages <= 20) / n)
-    print(f"C: Öğrencinin 20 yaşından daha küçük veya 21 yaşından daha büyük olması --> P(C): {sum(ages < 20) + sum(ages > 21)}/{n} = {sum((ages < 20) | (ages > 21)) / n}")
-    print(f"D: Öğrencinin 20 yaşında olması --> P(D): {sum(ages == 20)}/{n} = {sum(ages == 20) / n}")
-    print(f"E: Öğrencinin 18 yaşında olması --> P(E): {sum(ages == 18)}/{n} = {sum(ages == 18) / n}")
-    print(f"F: Öğrencinin 20 yaşından küçük olması --> P(F): {sum(ages < 20)}/{numberOfStudents} = {sum(ages < 20) / numberOfStudents}")
-    print(f"E|F: 20 yaşından küçük olan bir öğrencinin 18 yaşında olması --> P(E|F): {sum(ages == 18)}/{sum(ages < 20)} = {sum(ages == 18)/sum(ages < 20)}")
-    print(f"F|B: 20 yaşında veya daha küçük olan bir öğrencinin 20 yaşından küçük olması --> P(F|B): {sum(ages < 20)}/{sum(ages <= 20)} = {sum(ages < 20) / sum(ages <= 20)}")
+students = ["Patrick", "Abdullah", "Sefa", "Cindy", "Furkan", "Safa"]
+n = 1000
+count = 0
 
-numberOfStudents = 100 # öğrenci sayısı
-minAge, maxAge = 18, 23 # yaş aralığı
-ages = randint(minAge, maxAge+1, numberOfStudents) # rastgele yaşlar (tekdüze dağılım - uniform distribution)
-# olaylar hakkında bilgi veren, ihtimalleri hesaplayan ve ekrana yazdıran fonksiyonu çağır
-bilgi_olaylar_ihtimaller(ages, numberOfStudents)
-# ages dizisinde yer alan yaşları histogramda göster
-counts, bins, patches = plt.hist(
-    ages,
-    bins=np.arange(minAge - 0.5, maxAge + 0.5 + 1, 1),
-    edgecolor='black',
-    color='gray'
-)
-for i, patch in enumerate(patches):
-    x = patch.get_x() + patch.get_width() / 2
-    y = patch.get_height()
-    plt.text(x, y, str(int(counts[i])), ha='center', va='bottom', fontsize=12)
-plt.title('Öğrenci Yaş Histogramı'); plt.xlabel('Yaş'); plt.ylabel('Öğrenci Sayısı')
-plt.show()
+for i in range(n):
+    np.random.shuffle(students)
+    print(i+1, students, end=" ")
+    found = False
+    for j in range(len(students)-1):
+        if (students[j] == "Sefa" and students[j+1] == "Safa") or (students[j] == "Safa" and students[j+1] == "Sefa"):
+            count += 1
+            print(1)
+            found = True
+            break
+    if not found:
+        print(0)
+
+probability = count / n
+print(f"Sefa and Safa are next to each other {count} times out of {n} shuffles.")
+print(f"Probability: {probability}")
 ```
+
+<p align="justify"><b>Soru:</b> Aynı okulda farklı sınıflarda okuyan iki arkadaş gizlice sigara içmek için öğlen teneffüsünde okulun arkasında gizli bir yerde buluşacaklar. Arkadaşların birisinde sigara öbüründe ateş var. Ancak derse girmeden birbirleriyle sözleşmediklerinden dolayı 1 saatlik (yâni 60dk'lık) öğlen molasının hangi kısmında gizli yerlerinde olacaklarını birbirlerine söylemeyi unutmuşlar. Her ikisi de buluşma yerine gittiklerinde öbür arkadaşı en fazla 20dk bekleyip sınıfına dönmek zorunda. Bu iki arkadaşın teneffüste sigara içme olasılığı nedir? (5 Puan) Bu sorudaki rasgele değişkenler nelerdir? (Bonus +10 Puan) Derste bu sorunun nümerik çözümünü (simülasyonunu) Python’da numpy paketinden random sınıfından rand rasgele sayı üreticisini kullanarak toplam beş satırda yapmıştık. Simülasyonun parametreleri örnek sayısı n ve dakika cinsinden zaman penceresi büyüklüğü w idi. Burada aynı kodu yazınız. 
+</p>
+
+<p align="justify">Not: Her iki arkadaşın kullanabilecekleri 20dk'lık maksimum vakti x ve y eksenleri üzerinde inceleyerek soruya grafiksel olarak yaklaşabilirsiniz.</p>

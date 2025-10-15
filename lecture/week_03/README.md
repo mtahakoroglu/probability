@@ -1,62 +1,17 @@
-<h3>Hafta 3: Koşullu/Toplam Olasılık - devam</h3>
+<h3>Hafta 3 Önhazırlık: Buluşma Olasılığı 🫂</h3>
 
-<p align="justify"><b>Soru 5: (Koşullu ve Toplam Olasılık)</b> Real Madrid'in genç yıldızı Arda Güler'in bu sezon Real Madrid'den ayrılma ihtimâli %40'tır. Arda takımda kalırsa %30 ihtimalle maçlarda oynayacakken başka bir takıma transfer olması durumunda maçlarda oynama olasılığı %90 olacaktır. Arda'nın bu sezon maçlarda oynama olasılığını koşullu olasılık ve toplam olasılık kullanarak bulunuz.</p>
+<p align="justify"><b>Soru:</b> Eray ile Safa merkezde buluşmak üzere sözleşiyorlar. Eray'ın telefonu bozulduğu için anlık haberleşemiyorlar. Daha önceden 14:00-15:00 arasında meydanın orada buluşacaklarını ve ilk gelen kişinin 20dk bekleyip eğer öbür taraf gelmezse ayrılacağını konuşmuşlardı. Buluşma olasılıkları nedir?</p>
 
-<p align="justify"><b>Çözüm 5:</b> İlk önce olayları tanımlayalım.</p>
+<p align="justify"><b>Yaklaşım:</b> Her zaman olduğu gibi ilk önce soruya matematiksel (analitik) çözüm geliştirelim. Sonra mümkünse nümerik çözüm olan Monte Carlo Simülasyonu (MCS) metoduyla sonucu teyid etmeye çalışalım. <b>Not:</b> Matematiksel çözümün olmadığı durumlarda MCS'larının değeri çok büyüktür.</p>
 
-$$ \text{RM: Real Madrid'de kalma}$$
+<p align="justify"><b>Çözüm 1 (Matematiksel Çözüm):</b> Burada Eray ve Safa 1 saatlik yâni 60dk'lık bir zaman penceresinde rasgele bir anda merkeze geliyorlar. Bu durumda yatay ekseni $X$, dikey ekseni $Y$ rasgele değişkeni olacak şekilde $60 \times 60$'lık bir kare üzerinde analitik geometrik bilgilerimizi kullanarak soruya yaklaşalım.</p>
 
-$$ \text{RM': Real Madrid'den ayrılma}$$
+<img src="downtown-meeting.png" alt="geometric approach" width="300" height="auto">
 
-$$ \text{O | RM: Real Madrid'de oynama}$$
+<p align="justify">Denklemleri oluşturulan doğrular sınır durumlar. Dikkatle incelerseniz bu doğrular üzerindeki noktalarda tam birisi ayrılacakken öbürü geliyor. Biz bu doğruların arasındaki kalan alanın bütün kareye oranı ile ilgileniyoruz. A olayını Eray ile Safa'nın buluşması olarak tanımlarsak</p>
 
-$$ \text{O | RM': Başka takımda oynama}$$
+$$
+P(A) = \frac{60^2-40^2}{60^2} = \frac{(60-40)(60+40)}{60^2} = \frac{20\;100}{60\;60} = \frac{1}{3}\frac{5}{3} = \frac{5}{9} = 0.56
+$$
 
-$$ \text{O: Oynama}$$
-
-<p align="justify">Verilen bilgiler ve tanımlanan olaylar ışığında Arda'nın bu sezon oynama ihtimalini bulalım.</p>
-
-$$P(O) = P(O|\text{RM})P(\text{RM})+P(O|\text{RM'})P(\text{RM'})$$
-
-<p align="justify">Değerleri yerlerine koyarsak</p>
-
-$$P(O) = \frac{30}{100}\frac{60}{100}+\frac{90}{100}\frac{40}{100}$$
-
-<p align="justify">ve sadeleştirme yaparak işlemleri yaparsak</p>
-
-$$P(YL) = \frac{54}{100}=0.54$$
-
-<p align="justify">yâni %54 buluruz.</p>
-
-<p align="justify"><b>Soru 6: (Koşullu ve Toplam Olasılık)</b> Abdurrahman lisans eğitiminden sonra %30 ihtimalle memleketi Çad'a geri dönecek, %50 ihtimalle Türkiye'de kalacak, ya da Avrupa veya Amerika'ya gidecek. Çad'a dönerse yüksek lisans yapma olasılığı %20, Türkiye'de kalırsa %60, Avrupa veya Amerika'ya giderse %30. Bu bilgilere göre Abdurrahman'ın lisans eğitimi sona erdiğinde yüksek lisans yapma ihtimali nedir?</p>
-
-<p align="justify"><b>Çözüm 6:</b> İlk önce olayları tanımlayalım.</p>
-
-$$ \text{Ç: Çad'a gidiyor}$$
-
-$$ \text{T: Türkiye'de kalıyor}$$
-
-$$ \text{A: Avrupa veya Amerika'ya gidiyor}$$
-
-$$ \text{YL | Ç: Çad'a gidince Yüksek Lisans yapıyor}$$
-
-$$ \text{YL | T: Türkiye'de kalınca Yüksek Lisans yapıyor}$$
-
-$$ \text{YL | A: Avrupa veya Almanya'ya gidince Yüksek Lisans yapıyor}$$
-
-$$ \text{YL : Yüksek Lisans yapıyor}$$
-
-<p align="justify">Verilen bilgiler ve tanımlanan olaylar ışığında lisans eğitiminden sonra Abdurrahman'ın yüksek lisans (YL) yapma olasılığını hesaplayalım.</p>
-
-$$P(YL) = P(YL|\text{Ç})P(\text{Ç})+P(YL|\text{T})P(\text{T})+P(YL|\text{A})P(\text{A})$$
-
-<p align="justify">Değerleri yerlerine koyarsak</p>
-
-$$P(YL) = \frac{20}{100}\frac{30}{100}+\frac{60}{100}\frac{50}{100}+\frac{30}{100}\frac{20}{100}$$
-
-
-<p align="justify">ve sadeleştirme yaparak işlemleri yaparsak</p>
-
-$$P(YL) = \frac{42}{100}=0.42$$
-
-<p align="justify">yâni %42 buluruz.</p>
+<p align="justify">Yani %56 ihtimalle buluştuklarını hesap ederiz.</p>

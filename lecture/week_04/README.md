@@ -1,49 +1,62 @@
-<h3>Hafta 4: Histogramlara Giriş, Histogramda (Basit) Koşullu Olasılık</h3>
+<h3>Hafta 4: Koşullu/Toplam Olasılık - devam</h3>
 
-<p align="justify"><b>Soru 7: (Histogram)</b> Bir sınıftaki öğrencilerin yaşları sayıldığında aşağıda verilen histogram ortaya çıkmıştır. Buna göre sınıfta toplam kaç öğrenci vardır? Aşağıda tanımlanan olaylar ve histogramdaki bilgiler ışığında istenilen olasılıkları bulunuz.</p>
+<p align="justify"><b>Soru 5: (Koşullu ve Toplam Olasılık)</b> Real Madrid'in genç yıldızı Arda Güler'in bu sezon Real Madrid'den ayrılma ihtimâli %40'tır. Arda takımda kalırsa %30 ihtimalle maçlarda oynayacakken başka bir takıma transfer olması durumunda maçlarda oynama olasılığı %90 olacaktır. Arda'nın bu sezon maçlarda oynama olasılığını koşullu olasılık ve toplam olasılık kullanarak bulunuz.</p>
 
-<img src="../../image/class_age_histogram.png" alt="sınıftaki öğrencilerin yaş histogramı" width=500 height=auto>
+<p align="justify"><b>Çözüm 5:</b> İlk önce olayları tanımlayalım.</p>
 
-$$ \text{A : Seçilen birinin 21 yaşından büyük olması}$$
+$$ \text{RM: Real Madrid'de kalma}$$
 
-$$ \text{B : Seçilen birinin 20 yaşına eşit veya küçük olması}$$
+$$ \text{RM': Real Madrid'den ayrılma}$$
 
-$$ \text{C : Seçilen birinin 20 yaşından küçük veya 21 yaşından büyük olması}$$
+$$ \text{O | RM: Real Madrid'de oynama}$$
 
-$$ \text{D : Seçilen birinin 18 yaşında olması}$$
+$$ \text{O | RM': Başka takımda oynama}$$
 
-$$ \text{E : Seçilen birinin 20 yaşından küçük olması}$$
+$$ \text{O: Oynama}$$
 
-$$ \text{F : Seçilen birinin yaşının çift sayı olması}$$
+<p align="justify">Verilen bilgiler ve tanımlanan olaylar ışığında Arda'nın bu sezon oynama ihtimalini bulalım.</p>
 
-$$P(A)=?$$
-$$P(B)=?$$
-$$P(C)=?$$
-$$P(D)=?$$
-$$P(D|E)=?$$
-$$P(E|F')=?$$
-$$P(D|F)=?$$
+$$P(O) = P(O|\text{RM})P(\text{RM})+P(O|\text{RM'})P(\text{RM'})$$
 
-<p><b>Çözüm 7:</b>
+<p align="justify">Değerleri yerlerine koyarsak</p>
 
-$$P(A)=\frac{6+3+1}{100}=\frac{9}{100}=0.09$$
-$$P(B)=\frac{34+25+4+1}{100}=\frac{64}{100}=0.64$$
-$$P(C)=\frac{(1+4+25)+(6+3+1)}{100}=\frac{40}{100}=0.4$$
-$$P(D)=\frac{4}{100}=0.04$$
-$$P(D|E)=\frac{4}{1+4+25}=\frac{2}{15} \approx 0.13$$
-$$P(E|F')=\frac{1+25}{1+25+26+3}=\frac{26}{55} \approx 0.47$$
-$$P(D|F)=\frac{4}{4+34+6+1}=\frac{4}{45} \approx 0.088$$
+$$P(O) = \frac{30}{100}\frac{60}{100}+\frac{90}{100}\frac{40}{100}$$
+
+<p align="justify">ve sadeleştirme yaparak işlemleri yaparsak</p>
+
+$$P(YL) = \frac{54}{100}=0.54$$
+
+<p align="justify">yâni %54 buluruz.</p>
+
+<p align="justify"><b>Soru 6: (Koşullu ve Toplam Olasılık)</b> Hamadaou Jafaraou isimli arkadaşımız lisans eğitiminden sonra %30 ihtimalle memleketi Kamerun'a geri dönecek, %50 ihtimalle lisans eğitimini aldığı Türkiye'de kalacak, geri kalan %20 ihtimalle de Avrupa veya Amerika'ya gidecek. Memleketine dönerse yüksek lisans yapma olasılığı %80, Türkiye'de kalırsa %60, Avrupa veya Amerika'ya giderse %30. Bu bilgilere göre Jafaraou'in lisans eğitimi sona erdiğinde yüksek lisans yapma ihtimali nedir?</p>
+
+<p align="justify"><b>Çözüm 6:</b> İlk önce olayları tanımlayalım.</p>
+
+$$ \text{K: Kamerun'a gidiyor}$$
+
+$$ \text{T: Türkiye'de kalıyor}$$
+
+$$ \text{A: Avrupa veya Amerika'ya gidiyor}$$
+
+$$ \text{YL | K: Kamerun'a gidince yüksek lisans yapıyor}$$
+
+$$ \text{YL | T: Türkiye'de kalınca yüksek lisans yapıyor}$$
+
+$$ \text{YL | A: Avrupa veya Almanya'ya gidince yüksek lisans yapıyor}$$
+
+$$ \text{YL : Yüksek lisans yapıyor}$$
+
+<p align="justify">Verilen bilgiler ve tanımlanan olaylar ışığında lisans eğitiminden sonra Jafaraou'in yüksek lisans (YL) yapma olasılığını hesaplayalım.</p>
+
+$$P(YL) = P(YL|\text{K})P(\text{K})+P(YL|\text{T})P(\text{T})+P(YL|\text{A})P(\text{A})$$
+
+<p align="justify">Değerleri yerlerine koyarsak</p>
+
+$$P(YL) = \frac{20}{100}\frac{30}{100}+\frac{60}{100}\frac{50}{100}+\frac{30}{100}\frac{20}{100}$$
 
 
-</p>
+<p align="justify">ve sadeleştirme yaparak işlemleri yaparsak</p>
 
-<p align="justify"><b>Soru 8: (Histogramda dağılım)</b> Bursa otogarından İstanbul'a sabah 06:00'dan gece 24:00'a kadar iki saatte bir toplam on sefer var. Bazı seferlerde (yolcu sayısının az olması, otobüsün otogardan çıkış belgelerinin kapıda incelenmesi gibi) çeşitli nedenlerden dolayı otobüsün otogardan ayrılışında gecikmeler olabiliyor. Bu güzergahta çok sık seyahat eden bir yolcu bir hobi projesi olarak otogara bir kamera sistemi kurarak otobüsün otogardan saat başlarında ayrılış vakitlerini (otomatik olarak) yirmi gün boyunca kaydediyor. Bu sürenin sonunda topladığı veriyi çizdirince aşağıdaki histogram grafiğini elde ediyor.</p>
+$$P(YL) = \frac{42}{100}=0.42$$
 
-<ul>
-<li>Toplam kaç veri vardır? İhtimal hesapları yaparken toplam veri sayısını göz önünde bulundurmayı unutmayınız.</li>
-<li>Grafikteki veriye göre yolcu saat başını 4 geçe otogarda olursa ne olasılıkla otobüsü yakalar?</li>
-<li>Grafikteki veriye göre yolcu saat başını 2 geçe otogarda olursa ne olasılıkla otobüsü kaçırmıştır?</li>
-<li>Belli bir saatte kalkan bir otobüsün otogardan ayrılma vakitleri düşünüldüğünde bu grafikte gözlemlenen <b>dağılım</b> gerçekçi midir? Yorumlayınız.</li>
-</ul>
-
-<img src="../../image/bursa_istanbul_bus.png" alt="bursa istanbul otobüsü otogardan ayrılma saatleri histogramı" width=500 height=auto>
+<p align="justify">yâni %42 buluruz.</p>
