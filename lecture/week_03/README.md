@@ -11,7 +11,7 @@
 <p align="justify">Denklemleri oluşturulan doğrular sınır durumlar. Dikkatle incelerseniz bu doğrular üzerindeki noktalarda tam birisi ayrılacakken öbürü geliyor. Biz bu doğruların arasındaki kalan alanın bütün kareye oranı ile ilgileniyoruz. A olayını Eray ile Safa'nın buluşması olarak tanımlarsak</p>
 
 $$
-P(A) = \frac{60^2-40^2}{60^2} = \frac{(60-40)(60+40)}{60^2} = \frac{20\;100}{60\;60} = \frac{1}{3}\frac{5}{3} = \frac{5}{9} \approx 0.56
+P(A) = \frac{60^2-40^2}{60^2} = \frac{(60-40)(60+40)}{60^2} = \frac{20}{60}\frac{100}{60} = \frac{1}{3}\frac{5}{3} = \frac{5}{9} \approx 0.56
 $$
 
 <p align="justify">Yani yaklaşık olarak %56 ihtimalle buluştuklarını buluruz.</p>
