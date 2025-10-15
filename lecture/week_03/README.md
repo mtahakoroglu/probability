@@ -11,7 +11,20 @@
 <p align="justify">Denklemleri oluşturulan doğrular sınır durumlar. Dikkatle incelerseniz bu doğrular üzerindeki noktalarda tam birisi ayrılacakken öbürü geliyor. Biz bu doğruların arasındaki kalan alanın bütün kareye oranı ile ilgileniyoruz. A olayını Eray ile Safa'nın buluşması olarak tanımlarsak</p>
 
 $$
-P(A) = \frac{60^2-40^2}{60^2} = \frac{(60-40)(60+40)}{60^2} = \frac{20\;100}{60\;60} = \frac{1}{3}\frac{5}{3} = \frac{5}{9} = 0.56
+P(A) = \frac{60^2-40^2}{60^2} = \frac{(60-40)(60+40)}{60^2} = \frac{20\;100}{60\;60} = \frac{1}{3}\frac{5}{3} = \frac{5}{9} \approx 0.56
 $$
 
-<p align="justify">Yani %56 ihtimalle buluştuklarını hesap ederiz.</p>
+<p align="justify">Yani yaklaşık olarak %56 ihtimalle buluştuklarını buluruz.</p>
+
+<p align="justify"><b>Çözüm 2 (Nümerik Çözüm):</b> Aşağıdaki kod Monte Carlo Simülasyonu'nu gerçeklemektedir.</p>
+
+```
+from numpy.random import rand
+T = 60 # 1s=60dk'lık bir zaman penceresi
+w = 20 # bekleme süresi (dk)
+n = 10000 # toplam örnek (sample) sayısı
+xy = T*rand(n,2) # n adet rasgele örnek üret
+m = sum( abs( xy[:,0] - xy[:,1] ) <= w ) # buluşulan örnek sayısı
+print(f"Olasılık (analitik) {((T**2-(T-w)**2)/(T**2)):.5f}")
+print(f"Olasılık (nümerik) {m/n:.5f}")
+```
