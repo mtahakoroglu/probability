@@ -1,4 +1,4 @@
-<h3>Hafta 5: Histogramlar (devam), Dağılımlar ve Rasgele Değişkenlere Giriş</h3>
+<h3>Histogramlar (devam), Dağılımlar ve Rasgele Değişkenlere Giriş</h3>
 
 <p align="justify"><b>Soru 9 (Histogram - Üstel Dağılım): </b>Trabzon otogarından Gümüşhane'ye her sabah 08:00'de otobüs kalkıyor. Bazı günler (yolcu sayısının az olması gibi) çeşitli nedenlerden dolayı otobüsün kalkışında gecikmeler olabiliyor. Haftada birkaç kez Trabzon'dan Gümüşhane'ye gitmesi gereken bir öğrenci otogara bir kamera sistemi kurarak otobüsün otogardan ayrılış vakitlerini otomatik olarak yüz gün boyunca kaydediyor. Bu sürenin sonunda topladığı veriyi çizdirince aşağıdaki grafiği elde ediyor.</p>
 
