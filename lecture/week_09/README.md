@@ -1,4 +1,4 @@
-<h3>Hafta 7: Normal (Gaussian) Dağılım Parametreleri, Tekdüze (Uniform) Dağılım</h3>
+<h3>Normal (Gaussian) Dağılım Parametreleri, Tekdüze (Uniform) Dağılım</h3>
 
 <p align="justify"><b>Soru 12: </b>Aşağıda bir dağılıma ait normalize edilmiş dört histogram verilmiştir. <i>(a)</i> Bu dağılımın ismi nedir? <i>(b)</i> Bu dağılımın parametreleri nelerdir? İsimlerini ve sembollerini yazıp ne manaya geldiklerini açıklayınız. <i>(c)</i> {a, b, c, d, e, f, g, h} değerlerini {0, 0, 0, 0.2, 0.5, 1, 5, -2} değerleriyle eşleyiniz. <i>(d)</i> Sözüne güvenilir ve güvenilmez iki insan var. <i>(i)</i>, <i>(ii)</i>, <i>(iii)</i> ve <i>(iv)</i>'te gösterilen dağılımlarından hangi ikisi bu insanları modelleyemeye uygundur?</p>
 

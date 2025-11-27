@@ -1,4 +1,4 @@
-<h3>Hafta 6: Üstel (Eksponansiyel) Dağılım Uydurma, Histogramlarda Koşullu/Toplam Olasılık</h3>
+<h3>Üstel (Eksponansiyel) Dağılım Uydurma, Histogramlarda Koşullu/Toplam Olasılık</h3>
 
 <p align="justify"><b>Soru 11 (Üstel Dağılım Uydurma): </b>Bir otogardan saat başı ayrılan otobüslerin gecikmelerini dakika dakika gözlemleyen bir araştırmacı toplam <b>n</b> gözlem yaparak aşağıdaki şekilde verilen histogramı oluşturmuştur. <i>(i)</i> Verilenlere göre bu histogramdaki örnek (sample) sayısı <b>n</b> nedir? <i>(ii)</i> Normalize etmeyi açıklayarak histogramı normalize ediniz. <i>(iii)</i> Normalize histogram üzerine bir olasılık yoğunluk fonksiyonu (probability density function - pdf) uydurunuz. <i>(iv)</i> Uydurduğunuz pdf'in parametreleri nelerdir? <i>(v)</i> Yolcu saat başını 3 geçe otogarda olursa otobüsü yakalama olasılığı nedir? Bu soruyu hem histogramdan sayarak hem de elde ettiğiniz dağılım pdf'ini integralleyerek elde ediniz.</p>
 
