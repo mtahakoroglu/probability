@@ -1,4 +1,4 @@
-<h3>Hafta 4: Histogramlara Giriş, Histogramda (Basit) Koşullu Olasılık</h3>
+<h3>Histogramlara Giriş, Histogramda (Basit) Koşullu Olasılık</h3>
 
 <p align="justify"><b>Soru 7: (Histogram)</b> Bir sınıftaki öğrencilerin yaşları sayıldığında aşağıda verilen histogram ortaya çıkmıştır. Buna göre sınıfta toplam kaç öğrenci vardır? Aşağıda tanımlanan olaylar ve histogramdaki bilgiler ışığında istenilen olasılıkları bulunuz.</p>
 
