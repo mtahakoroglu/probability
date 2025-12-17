@@ -39,8 +39,8 @@ $$\displaystyle Z = \frac{X-\mu}{\sigma} \sim N(0, 1)$$
 
 <p align="justify">elde edilir. Bu dönüşüm sayesinde, tüm olasılık hesapları tek bir tablo (standart normal dağılım cdf tablosu) kullanılarak yapılabilir.</p>
 
-<p align="justify"><b>Soru 1:</b> Bir olasılık sınavında notların dağılımı, ortalaması 50 ve varyansı 25 olan bir normal dağılımla modellenmektedir.
-Buna göre, bir öğrencinin 52’den daha düşük not alma olasılığı nedir?</p>
+<p align="justify"><b>Soru:</b> Bir olasılık sınavında notların dağılımı, ortalaması 50 ve varyansı 25 olan bir normal dağılımla modellenmektedir.
+Buna göre, bir öğrencinin<br><b>a)</b> 52'den daha düşük not alma olasılığı<br><b>b)</b> 49'dan daha düşük not alma olasılığı<br><b>c)</b> 48'den daha yüksek not alma olasılığı<br><b>d)</b> 53'ten daha yüksek not alma olasılığı<br>nedir?</p>
 
 $$\displaystyle X \sim N(50, 25)$$
 
@@ -50,7 +50,7 @@ $$\displaystyle P(X<52) = P \bigg (\frac{X-\mu}{\sigma} < \frac{52-50}{5} \bigg)
 
 <p align="justify">Standart normal dağılım cdf tablosundan:</p>
 
-$P(Z<0.4) = F_Z(0.4) = \Phi(0.4) \approx 0.6554$
+$$P(Z<0.4) = \int_{-\infty}^{0.4}f_Z(z) = \Phi(0.4) \approx 0.6554$$
 
 <p align="justify">sonucu elde edilir.</p>
 
@@ -65,9 +65,6 @@ $P(Z<0.4) = F_Z(0.4) = \Phi(0.4) \approx 0.6554$
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_05">Hafta 5: Histogramlara Giriş, Histogramda (Basit) Koşullu Olasılık</a></p>
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_06">Hafta 6: Histogramlar (devam), Dağılımlar ve Rasgele Değişkenlere Giriş, Histogramda Koşullu Olasılık</a></p>
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_07">Hafta 7: Üstel (Eksponansiyel) Dağılım Uydurma, Histogramlarda Koşullu/Toplam Olasılık</a></p>
-<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_09_10">Hafta 9-10: Normal (Gaussian) Dağılım Parametreleri ve Tekdüze (Uniform) Dağılım</a></p>
-<p align="justify"><a href="C:\Users\mtaha\Dropbox\GitHub\probability\lecture\week_10_11">Hafta 11-12: BAYES</a></p>
-<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_13">Hafta 13: BAYES - devam</a></p>
-<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_14">Hafta 14: Rasgele Sayı Üreteci ile Simülasyon</a></p>
-<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_15">Hafta 15: Öğrenci Yaş Histogram - Python Kodu</a></p>
-<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/normal-distribution">Normal Dağılım</a></p>
+<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/uniform">Tekdüze (Uniform) Dağılım</a></p>
+<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/normal">Normal Dağılım</a></p>
+<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/Bayes">Bayes</a></p>
