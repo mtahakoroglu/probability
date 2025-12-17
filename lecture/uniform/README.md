@@ -1,5 +1,5 @@
 <h3>Tekdüze (Uniform) Dağılım</h3>
-<p align="justify"><b>Soru:</b>Aşağıda bir dağılıma ait histogram verilmiştir. Aşağıda sorulan soruları histogramı inceleyerek cevaplayınız.</p>
+<p align="justify"><b>Soru:</b> Aşağıda bir dağılıma ait histogram verilmiştir. Aşağıda sorulan soruları histogramı inceleyerek cevaplayınız.</p>
 
 <img src="uniform-distribution.png" alt="örnek bir tekdüze dağılım" width=800 height=auto>
 

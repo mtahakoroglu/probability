@@ -39,9 +39,9 @@ $$P(K|B) = \frac{P(B|K)P(K)}{P(B|K)P(K) + P(B|K')P(K')}$$
 
 <p align="justify">Paydada yer alan P(B) ifadesini toplam olasılıkla (b) şıkkında buluyoruz. İfadeleri yerlerine koyalım.</p>
 
-$$P(K|B) = \frac{\frac{80}{100}\frac{40}{100}}{\frac{62}{100}}$$
+$$P(K|B) = \frac{\displaystyle \frac{80}{100}\frac{40}{100}}{\displaystyle  \frac{62}{100}}$$
 
-$$P(K|B) = \frac{\frac{32}{100}}{\frac{62}{100}} = \frac{32}{62} = \frac{16}{31} \approx 0.52$$
+$$P(K|B) = \frac{\displaystyle \frac{32}{100}}{\displaystyle \frac{62}{100}} = \frac{32}{62} = \frac{16}{31} \approx 0.52$$
 
 <p align="adjust"><b>Not:</b> Bayes soruları sayı vererek kolayca çözülebilir.</p>
 
