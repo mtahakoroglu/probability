@@ -53,8 +53,8 @@ $$\displaystyle Z = \frac{X-\mu}{\sigma} \sim N(0, 1)$$
 
 <p align="justify">elde edilir. Bu dönüşüm sayesinde, tüm olasılık hesapları tek bir tablo (standart normal dağılım cdf tablosu) kullanılarak yapılabilir.</p>
 
-<p align="justify"><b>Soru 1:</b> Bir olasılık sınavında notların dağılımı, ortalaması 50 ve varyansı 25 olan bir normal dağılımla modellenmektedir.
-Buna göre, bir öğrencinin 52’den daha düşük not alma olasılığı nedir?</p>
+<p align="justify"><b>Soru:</b> Bir olasılık sınavında notların dağılımı, ortalaması 50 ve varyansı 25 olan bir normal dağılımla modellenmektedir.
+Buna göre, bir öğrencinin<br><b>a)</b> 52'den daha düşük not alma olasılığı<br><b>b)</b> 49'dan daha düşük not alma olasılığı<br><b>c)</b> 48'den daha yüksek not alma olasılığı<br><b>d)</b> 53'ten daha yüksek not alma olasılığı<br>nedir?</p>
 
 $$\displaystyle X \sim N(50, 25)$$
 
@@ -64,7 +64,7 @@ $$\displaystyle P(X<52) = P \bigg (\frac{X-\mu}{\sigma} < \frac{52-50}{5} \bigg)
 
 <p align="justify">Standart normal dağılım cdf tablosundan:</p>
 
-$P(Z<0.4) = F_Z(0.4) = \Phi(0.4) \approx 0.6554$
+$$P(Z<0.4) = \int_{-\infty}^{0.4}f_Z(z) = \Phi(0.4) \approx 0.6554$$
 
 <p align="justify">sonucu elde edilir.</p>
 

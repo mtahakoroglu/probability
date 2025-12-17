@@ -1,7 +1,7 @@
 <h3>Tekdüze (Uniform) Dağılım</h3>
 <p align="justify"><b>Soru:</b>Aşağıda bir dağılıma ait histogram verilmiştir. Aşağıda sorulan soruları histogramı inceleyerek cevaplayınız.</p>
 
-<img src="../../image/uniform-distribution.png" alt="örnek bir tekdüze dağılım" width=800 height=auto>
+<img src="uniform-distribution.png" alt="örnek bir tekdüze dağılım" width=800 height=auto>
 
 <p align="justify"><i>(a)</i> Toplam kaç veri vardır? ($n=100000$)</p>
 
