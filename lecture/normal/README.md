@@ -128,7 +128,7 @@ $$P(Z \gt 0.6) = \Phi(-0.6) = 0.2743$$
 
 <p><b>e)</b> İlk önce standartlaştırma işlemi uygulanır:</p>
 
-$$P(45 \lt X \lt 55) = P \bigg ( \frac{45-50}{5} \lt \frac{X-\mu}{\sigma} \lt \frac{55-50}{5} \bigg) = P(-1<Z<1)$$
+$$P(45 \lt X \lt 55) = P \bigg ( \frac{45-50}{5} \lt \frac{X-\mu}{\sigma} \lt \frac{55-50}{5} \bigg) = P(-1 \lt Z \lt 1)$$
 
 <p>Eğer Normal dağılıma ait pdf kolayca integrallenebilir olsaydı</p>
 
