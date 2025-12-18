@@ -52,3 +52,18 @@ $$P(B) = P(B|K)P(K) + P(B|K')P(K')$$
 $$P(B) = \frac{80}{100}\frac{40}{100} + \frac{50}{100}\frac{60}{100}$$
 
 $$P(B) = \frac{32+30}{100} = \frac{62}{100} = 0.62$$
+
+
+<p align="justify"><b>Soru (Bayes):</b> Bir sınıfta 20 Türkiye, 18 Afrika ve 12 Suriye doğumlu öğrenci vardır. Türkiye doğumluların yarısı, Suriye doğumluların ise 4 tanesi 20 yaşından büyüktür. Sınıftan rasgele seçilen bir öğrencinin 20 yaşından büyük olma olasılığı %40'tır.</p>
+
+<p align="justify"><b>(a)</b> Afrikalı öğrencilerin kaç tanesi 20 yaşından büyüktür? (Koşullu ve Toplam Olasılık)</p>
+
+<p align="justify"><b>(b)</b> Sınıftaki 20 yaşından büyük öğrenciler arasından rasgele bir öğrenci seçildiğinde bu öğrencinin Afrikalı olma olasılığı nedir? (Bayes)</p>
+
+<p align="justify"><b>Not:</b> Soruları koşullu olasılık, toplam olasılık ve Bayes kullanarak Venn şeması yardımıyla çözebileceğiniz gibi sayı vererek de çözebilirsiniz.</p>
+
+
+
+
+<p align="justify"><b>Soru (Bayes):</b> Bir sınava giren öğrencilerin %50'si Alman, %30'u Belçikalı ve %20'si Hollandalı'dır. Alman öğrencilerin sınavdan kalma olasılığı %20, Belçikalı öğrencilerin kalma olasılığı %10 ve Hollandalı öğrencilerin kalma olasılığı ise %60'tır. Sınavı geçemeyenlerden rasgele bir öğrenci seçiliyor. Bu öğrencinin Belçikalı olma olasılığı nedir?
+</p>
