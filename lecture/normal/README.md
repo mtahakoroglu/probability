@@ -124,26 +124,24 @@ $$P(Z>0.6) = 1-\Phi(0.6) = 1-0.7257 = 0.2743$$
 
 <p>Burada <a href="https://github.com/mtahakoroglu/probability/blob/main/lecture/normal/standard-normal-cdf-table.pdf">standart normal dağılım cdf tablosunun</a> simetrisinden faydalanarak çözümü aşağıdaki gibi de hesaplayabilirdik.</p>
 
-$$P(Z>0.6) = \Phi(-0.6) = 0.2743$$
+$$P(Z \gt 0.6) = \Phi(-0.6) = 0.2743$$
 
 <p><b>e)</b> İlk önce standartlaştırma işlemi uygulanır:</p>
 
-$$P(45<X<55) = P \bigg ( \frac{45-50}{5} < \frac{X-\mu}{\sigma} < \frac{55-50}{5} \bigg)$$
-
-$$P(45<X<55) = P(-1<Z<1)$$
+$$P(45 \lt X \lt 55) = P \bigg ( \frac{45-50}{5} \lt \frac{X-\mu}{\sigma} \lt \frac{55-50}{5} \bigg) = P(-1<Z<1)$$
 
 <p>Eğer Normal dağılıma ait pdf kolayca integrallenebilir olsaydı</p>
 
-$$P(-1<Z<1) = \int_{-1}^{1}f_Z(z)$$
+$$P(-1 \lt Z \lt 1) = \int_{-1}^{1}f_Z(z)$$
 
 <p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https://github.com/mtahakoroglu/probability/blob/main/lecture/normal/standard-normal-cdf-table.pdf">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
 
-$$P(-1<Z<1) = \Phi(1)-\Phi(-1) = 0.8413 - 0.1587 = 0.6826$$
+$$P(-1 \lt Z \lt 1) = \Phi(1)-\Phi(-1) = 0.8413 - 0.1587 = 0.6826$$
 
 <p>Soruda karşımıza çıkan</p>
 
-$$45<Z<55$$
+$$45 \lt Z \lt 55$$
 
-<p>aralığı ortalama değer olan $\mu=50$'yi merkeze alacak bakacak olursak $\pm \sigma$ aralığına tekabül ettiğinden ilgili olasılık değerini %68 olarak hesapladık. Aşağıdaki grafik de bunu teyit etmektedir</p>
+<p>aralığı ortalama değer olan $\mu=50$'yi merkeze alacak bakacak olursak $\pm \sigma$ aralığına tekabül ettiğinden ilgili olasılık değerini %68 olarak hesapladık. Aşağıdaki grafik bunu teyit etmektedir</p>
 
 <img src="68-95-99-rule.png" alt="68-95-99 rule" width=600>
