@@ -12,10 +12,11 @@ $$
     <li>σ ise standart sapmasını (standard deviation) ifade eder.</li>
 </ul>
 
-<p align="justify">Bu iki parametre, normal dağılımın hem konumunu hem de yayılımını tamamen belirler. Aşağıdaki şekilde, farklı parametre değerleri için normal dağılımın tipik görünümü verilmiştir.<br>📌 Not: Normal dağılım sürekli bir dağılımdır ve olasılıklar, pdf’in belirli aralıklardaki integrali ile hesaplanır.</p>
+<p align="justify">Bu iki parametre, normal dağılımın hem konumunu hem de yayılımını tamamen belirler. Aşağıdaki şekilde, farklı parametre değerleri için normal dağılımın görünümü <a href="https://github.com/mtahakoroglu/probability/blob/main/lecture/normal/normal-distribution-pdf.py">çizdirilmiştir</a>.<br>📌 Not: Normal dağılım sürekli bir dağılımdır ve olasılıklar, pdf'in belirli aralıklardaki integrali ile hesaplanır.</p>
 
 <img src="normal_distribution_pdf.png" alt="Normal dağılım olasılık yoğunluk fonksiyonu" width=500>
 
+---
 <p align="justify"><b>Soru: </b>Aşağıda bir dağılıma ait normalize edilmiş dört histogram verilmiştir. <i>(a)</i> Bu dağılımın ismi nedir? <i>(b)</i> Bu dağılımın parametreleri nelerdir? İsimlerini ve sembollerini yazıp ne manaya geldiklerini açıklayınız. <i>(c)</i> {a, b, c, d, e, f, g, h} değerlerini {0, 0, 0, 0.2, 0.5, 1, 5, -2} değerleriyle eşleyiniz. <i>(d)</i> Sözüne güvenilir ve güvenilmez iki insan var. <i>(i)</i>, <i>(ii)</i>, <i>(iii)</i> ve <i>(iv)</i>'te gösterilen dağılımlarından hangi ikisi bu insanları modelleyemeye uygundur?</p>
 
 <img src="normal_distribution_parameters.png" alt="normal dağılım parametreleri" width=%100 height=auto>
@@ -54,18 +55,93 @@ $$\displaystyle Z = \frac{X-\mu}{\sigma} \sim N(0, 1)$$
 <p align="justify">elde edilir. Bu dönüşüm sayesinde, tüm olasılık hesapları tek bir tablo (standart normal dağılım cdf tablosu) kullanılarak yapılabilir.</p>
 
 <p align="justify"><b>Soru:</b> Bir olasılık sınavında notların dağılımı, ortalaması 50 ve varyansı 25 olan bir normal dağılımla modellenmektedir.
-Buna göre, bir öğrencinin<br><b>a)</b> 52'den daha düşük not alma olasılığı<br><b>b)</b> 49'dan daha düşük not alma olasılığı<br><b>c)</b> 48'den daha yüksek not alma olasılığı<br><b>d)</b> 53'ten daha yüksek not alma olasılığı<br>nedir?</p>
+Buna göre, bir öğrencinin<br>
+<b>a)</b> 52'den daha düşük not almış olma olasılığı nedir?<br>
+<b>b)</b> 49'dan daha düşük not almış olma olasılığı nedir?<br>
+<b>c)</b> 48'den daha yüksek not almış olma olasılığı nedir?<br>
+<b>d)</b> 53'ten daha yüksek not almış olma olasılığı nedir?<br>
+<b>e)</b> 45 ile 55 arasında not almış olma olasılığı nedir?</p>
 
-$$\displaystyle X \sim N(50, 25)$$
+<p><b>Çözüm:</b></p>
 
-<p>Standartlaştırma işlemi uygulanır:</p>
+$$\displaystyle X \sim N(50, 5^2)$$
+
+<p><b>a)</b> İlk önce standartlaştırma işlemi uygulanır:</p>
 
 $$\displaystyle P(X<52) = P \bigg (\frac{X-\mu}{\sigma} < \frac{52-50}{5} \bigg) = P(Z<0.4)$$
 
-<p align="justify">Standart normal dağılım cdf tablosundan:</p>
+<p>Eğer Normal dağılıma ait pdf kolayca integrallenebilir olsaydı</p>
 
-$$P(Z<0.4) = \int_{-\infty}^{0.4}f_Z(z) = \Phi(0.4) \approx 0.6554$$
+$$P(Z<0.4) = \int_{-\infty}^{0.4}f_Z(z)$$
 
-<p align="justify">sonucu elde edilir.</p>
+<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https:/github.com/mtahakoroglu/probability/normal">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
+
+$$P(Z<0.4) = \Phi(0.4) \approx 0.6554$$
+
+<p align="justify">Aşağıda sorunun <a href="https:/github.com/mtahakoroglu/probability/normal">Monte Carlo simülasyonu ile elde edilen çözümü</a> de ayrıca verilmiştir.</p>
 
 <img src="exam_grades_distribution.png" alt="Sınav notları dağılımı" width=500>
+
+<p><b>b)</b> İlk önce standartlaştırma işlemi uygulanır:</p>
+
+$$\displaystyle P(X<49) = P \bigg (\frac{X-\mu}{\sigma} < \frac{49-50}{5} \bigg) = P(Z<-0.2)$$
+
+<p>Eğer Normal dağılıma ait pdf kolayca integrallenebilir olsaydı</p>
+
+$$P(Z<-0.2) = \int_{-\infty}^{-0.2}f_Z(z)$$
+
+<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https:/github.com/mtahakoroglu/probability/normal">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
+
+$$P(Z<-0.2) = \Phi(-0.2) \approx 0.4207$$
+
+<p><b>c)</b> İlk önce standartlaştırma işlemi uygulanır:</p>
+
+$$\displaystyle P(X>48) = P \bigg (\frac{X-\mu}{\sigma} > \frac{48-50}{5} \bigg) = P(Z<-0.4)$$
+
+<p>Eğer Normal dağılıma ait pdf kolayca integrallenebilir olsaydı</p>
+
+$$P(Z>-0.4) = \int_{-0.4}^{\infty}f_Z(z)$$
+
+<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https:/github.com/mtahakoroglu/probability/normal">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
+
+$$P(Z>-0.4) = 1-\Phi(-0.4) = 1-0.3446 = 0.6554$$
+
+<p>Burada <a href="https:/github.com/mtahakoroglu/probability/normal">standart normal dağılım cdf tablosunun</a> simetrisinden faydalanarak çözümü aşağıdaki gibi de hesaplayabilirdik.</p>
+
+$$P(Z>-0.4) = \Phi(0.4) = 0.6554$$
+
+<p><b>d)</b> İlk önce standartlaştırma işlemi uygulanır:</p>
+
+$$\displaystyle P(X>53) = P \bigg (\frac{X-\mu}{\sigma} > \frac{53-50}{5} \bigg) = P(Z>0.6)$$
+
+<p>Eğer Normal dağılıma ait pdf kolayca integrallenebilir olsaydı</p>
+
+$$P(Z>0.6) = \int_{0.6}^{\infty}f_Z(z)$$
+
+<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https:/github.com/mtahakoroglu/probability/normal">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
+
+$$P(Z>0.6) = 1-\Phi(0.6) = 1-0.7257 = 0.2743$$
+
+<p>Burada <a href="https:/github.com/mtahakoroglu/probability/normal">standart normal dağılım cdf tablosunun</a> simetrisinden faydalanarak çözümü aşağıdaki gibi de hesaplayabilirdik.</p>
+
+$$P(Z>0.6) = \Phi(-0.6) = 0.2743$$
+
+<p><b>e)</b> İlk önce standartlaştırma işlemi uygulanır:</p>
+
+$$\displaystyle P(45<X<55) = P \bigg ( \frac{45-50}{5} < \frac{X-\mu}{\sigma} < \frac{55-50}{5} \bigg) = P(-1<Z<1)$$
+
+<p>Eğer Normal dağılıma ait pdf kolayca integrallenebilir olsaydı</p>
+
+$$P(-1<Z<1) = \int_{-1}^{1}f_Z(z)$$
+
+<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https:/github.com/mtahakoroglu/probability/normal">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
+
+$$P(-1<Z<1) = \Phi(1)-\Phi(-1) = 0.8413 - 0.1587 = 0.6826$$
+
+<p>Soruda karşımıza çıkan</p>
+
+$$45<Z<55$$
+
+<p>aralığı ortalama değer olan $\mu=50$'yi merkeze alacak bakacak olursak $\pm \sigma$ aralığına tekabül ettiğinden ilgili olasılık değerini %68 olarak hesapladık. Aşağıdaki grafik de bunu teyit etmektedir</p>
+
+<img src="68-95-99-rule.png" alt="68-95-99 rule" width=600>
