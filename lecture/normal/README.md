@@ -74,11 +74,11 @@ $$\displaystyle P(X<52) = P \bigg (\frac{X-\mu}{\sigma} < \frac{52-50}{5} \bigg)
 
 $$P(Z<0.4) = \int_{-\infty}^{0.4}f_Z(z)$$
 
-<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https:/github.com/mtahakoroglu/probability/normal">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
+<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https://github.com/mtahakoroglu/probability/blob/main/lecture/normal/standard-normal-cdf-table.pdf">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
 
 $$P(Z<0.4) = \Phi(0.4) \approx 0.6554$$
 
-<p align="justify">Aşağıda sorunun <a href="https:/github.com/mtahakoroglu/probability/normal">Monte Carlo simülasyonu ile elde edilen çözümü</a> de ayrıca verilmiştir.</p>
+<p align="justify">Aşağıda sorunun <a href="https://github.com/mtahakoroglu/probability/blob/main/lecture/normal/exam-grades.py">Monte Carlo simülasyonu ile elde edilen çözümü</a> de ayrıca verilmiştir.</p>
 
 <img src="exam_grades_distribution.png" alt="Sınav notları dağılımı" width=500>
 
@@ -90,7 +90,7 @@ $$\displaystyle P(X<49) = P \bigg (\frac{X-\mu}{\sigma} < \frac{49-50}{5} \bigg)
 
 $$P(Z<-0.2) = \int_{-\infty}^{-0.2}f_Z(z)$$
 
-<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https:/github.com/mtahakoroglu/probability/normal">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
+<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https://github.com/mtahakoroglu/probability/blob/main/lecture/normal/standard-normal-cdf-table.pdf">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
 
 $$P(Z<-0.2) = \Phi(-0.2) \approx 0.4207$$
 
@@ -102,11 +102,11 @@ $$\displaystyle P(X>48) = P \bigg (\frac{X-\mu}{\sigma} > \frac{48-50}{5} \bigg)
 
 $$P(Z>-0.4) = \int_{-0.4}^{\infty}f_Z(z)$$
 
-<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https:/github.com/mtahakoroglu/probability/normal">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
+<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https://github.com/mtahakoroglu/probability/blob/main/lecture/normal/standard-normal-cdf-table.pdf">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
 
 $$P(Z>-0.4) = 1-\Phi(-0.4) = 1-0.3446 = 0.6554$$
 
-<p>Burada <a href="https:/github.com/mtahakoroglu/probability/normal">standart normal dağılım cdf tablosunun</a> simetrisinden faydalanarak çözümü aşağıdaki gibi de hesaplayabilirdik.</p>
+<p>Burada <a href="https://github.com/mtahakoroglu/probability/blob/main/lecture/normal/standard-normal-cdf-table.pdf">standart normal dağılım cdf tablosunun</a> simetrisinden faydalanarak çözümü aşağıdaki gibi de hesaplayabilirdik.</p>
 
 $$P(Z>-0.4) = \Phi(0.4) = 0.6554$$
 
@@ -118,11 +118,11 @@ $$\displaystyle P(X>53) = P \bigg (\frac{X-\mu}{\sigma} > \frac{53-50}{5} \bigg)
 
 $$P(Z>0.6) = \int_{0.6}^{\infty}f_Z(z)$$
 
-<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https:/github.com/mtahakoroglu/probability/normal">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
+<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https://github.com/mtahakoroglu/probability/blob/main/lecture/normal/standard-normal-cdf-table.pdf">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
 
 $$P(Z>0.6) = 1-\Phi(0.6) = 1-0.7257 = 0.2743$$
 
-<p>Burada <a href="https:/github.com/mtahakoroglu/probability/normal">standart normal dağılım cdf tablosunun</a> simetrisinden faydalanarak çözümü aşağıdaki gibi de hesaplayabilirdik.</p>
+<p>Burada <a href="https://github.com/mtahakoroglu/probability/blob/main/lecture/normal/standard-normal-cdf-table.pdf">standart normal dağılım cdf tablosunun</a> simetrisinden faydalanarak çözümü aşağıdaki gibi de hesaplayabilirdik.</p>
 
 $$P(Z>0.6) = \Phi(-0.6) = 0.2743$$
 
@@ -134,7 +134,7 @@ $$\displaystyle P(45<X<55) = P \bigg ( \frac{45-50}{5} < \frac{X-\mu}{\sigma} < 
 
 $$P(-1<Z<1) = \int_{-1}^{1}f_Z(z)$$
 
-<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https:/github.com/mtahakoroglu/probability/normal">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
+<p>şeklinde çözümü elde edebilirdik. Öyle olmadığından <a href="https://github.com/mtahakoroglu/probability/blob/main/lecture/normal/standard-normal-cdf-table.pdf">standart normal dağılım cdf tablosundan</a> faydalanarak çözümü hesaplarız.</p>
 
 $$P(-1<Z<1) = \Phi(1)-\Phi(-1) = 0.8413 - 0.1587 = 0.6826$$
 
