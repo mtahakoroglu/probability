@@ -67,4 +67,5 @@ $$P(Z<0.4) = \int_{-\infty}^{0.4}f_Z(z) = \Phi(0.4) \approx 0.6554$$
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/week_07">Hafta 7: Üstel (Eksponansiyel) Dağılım Uydurma, Histogramlarda Koşullu/Toplam Olasılık</a></p>
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/uniform">Tekdüze (Uniform) Dağılım</a></p>
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/normal">Normal Dağılım</a></p>
+<p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/normal-dağılım-devam">Normal Dağılım - Devam</a></p>
 <p align="justify"><a href="https://github.com/mtahakoroglu/probability/tree/main/lecture/Bayes">Bayes</a></p>

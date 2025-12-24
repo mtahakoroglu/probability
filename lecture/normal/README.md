@@ -142,6 +142,6 @@ $$P(-1 \lt Z \lt 1) = \Phi(1)-\Phi(-1) = 0.8413 - 0.1587 = 0.6826$$
 
 $$45 \lt Z \lt 55$$
 
-<p>aralığı ortalama değer olan $\mu=50$'yi merkeze alacak bakacak olursak $\pm \sigma$ aralığına tekabül ettiğinden ilgili olasılık değerini %68 olarak hesapladık. Aşağıdaki grafik bunu teyit etmektedir</p>
+<p>aralığı ortalama değer olan $\mu=50$'yi merkeze alacak bakacak olursak $\pm \sigma$ aralığına tekabül ettiğinden ilgili olasılık değerini %68 olarak hesapladık. Aşağıdaki grafik bunu teyit etmektedir.</p>
 
 <img src="68-95-99-rule.png" alt="68-95-99 rule" width=600>
