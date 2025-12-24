@@ -11,26 +11,18 @@ Buna göre, bir öğrencinin<br>
 
 <p align="justify">Şimdi bu grafiğin ifade ettiği anlam üzerinde yeni sorulara cevap vermeye çalışalım.<br>
 
-<b>b)</b> 40 ile 50 arasında not almış olma olasılığı nedir?<br>
+<b>b)</b> 40 ile 50 arasında not almış olma olasılığı $P(40 \leq X \leq 50)$ nedir?<p>
 
-$$\displaystyle P(40 \leq X \leq 50)$$
+$$\frac{100}{2} - \frac{5}{2} \approx 47.5$$
 
-$$\frac{100}{2} - \frac{5}{2} \approx \%47.5$$
+<p><b>c)</b> 35 ile 55 arasında not almış olma olasılığı $P(35 \leq X \leq 55)$ nedir?</p><br>
 
-<b>c)</b> 35 ile 55 arasında not almış olma olasılığı nedir?<br>
+$$\frac{100}{2} + \frac{68}{2} \approx 84$$
 
-$$\displaystyle P(35 \leq X \leq 55)$$
+<p><b>d)</b> 55'ten daha yüksek not almış olma olasılığı $P(55 \leq X)$ nedir?</p><br>
 
-$$\frac{100}{2} + \frac{68}{2} \approx \%84$$
+$$\frac{100-68}{2} \approx 16$$
 
-<b>d)</b> 55'ten daha yüksek not almış olma olasılığı nedir?<br>
+<p><b>e)</b> 50 ile 60 arasında not almış olma olasılığı $P(50 \leq X \leq 60)$ nedir?</p>
 
-$$\displaystyle P(55 \leq X)$$
-
-$$\frac{100-68}{2} \approx \%16$$
-
-<b>e)</b> 50 ile 60 arasında not almış olma olasılığı nedir?<br></p>
-
-$$\displaystyle P(50 \leq X \leq 60)$$
-
-$$\frac{100}{2} - \frac{95}{2} \approx \%47.5$$
+$$\frac{100}{2} - \frac{95}{2} \approx 47.5$$
